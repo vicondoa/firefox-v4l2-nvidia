@@ -836,7 +836,7 @@ bool FFmpegVideoDecoder<LIBAV_VER>::ShouldDisableHWDecoding(
   bool supported = false;
   switch (mCodecID) {
     case AV_CODEC_ID_H264:
-      supported = gfx::gfxVars::UseH264HwDecode();
+      supported = true;
       break;
     case AV_CODEC_ID_VP8:
       supported = gfx::gfxVars::UseVP8HwDecode();
