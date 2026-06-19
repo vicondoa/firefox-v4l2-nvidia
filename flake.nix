@@ -20,14 +20,11 @@
           inherit (manifest.binaries."firefox-v4l2-nvidia") url hash;
         };
         nativeBuildInputs = with pkgs; [ autoPatchelfHook wrapGAppsHook3 ];
-        # Firefox bundles libonnxruntime with a protobuf dep that may not
-        # match the system version. Allow missing for bundled libs.
-        autoPatchelfIgnoreMissingDeps = true;
         buildInputs = with pkgs; [
           stdenv.cc.cc.lib gtk3 glib dbus-glib libXt alsa-lib
           pulseaudio ffmpeg libGL pango atk gdk-pixbuf cairo
           fontconfig freetype libxkbcommon wayland
-          nspr nss cups libdrm mesa libva
+          nspr nss cups libdrm mesa libva protobuf
           xorg.libX11 xorg.libXcomposite xorg.libXdamage xorg.libXext
           xorg.libXfixes xorg.libXrandr xorg.libxcb
         ];
