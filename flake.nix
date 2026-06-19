@@ -24,6 +24,9 @@
           stdenv.cc.cc.lib gtk3 glib dbus-glib libXt alsa-lib
           pulseaudio ffmpeg libGL pango atk gdk-pixbuf cairo
           fontconfig freetype libxkbcommon wayland
+          nspr nss cups libdrm mesa libva
+          xorg.libX11 xorg.libXcomposite xorg.libXdamage xorg.libXext
+          xorg.libXfixes xorg.libXrandr xorg.libxcb
         ];
         sourceRoot = ".";
         dontConfigure = true;
