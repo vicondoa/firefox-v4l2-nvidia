@@ -2463,6 +2463,50 @@ MediaResult FFmpegVideoDecoder<LIBAV_VER>::CreateImageV4L2(
              " duration=%" PRId64,
              aPts, mFrame->pkt_dts, aDuration);
 
+  if (mFrame->format != AV_PIX_FMT_DRM_PRIME) {
+    FFMPEG_LOG("V4L2 non-DRM frame format=%d; using owned software image",
+               mFrame->format);
+    AVPixelFormat savedPixelFormat = mCodecContext->pix_fmt;
+    int savedFrameFormat = mFrame->format;
+    uint8_t* savedData1 = mFrame->data[1];
+    uint8_t* savedData2 = mFrame->data[2];
+    int savedLinesize1 = mFrame->linesize[1];
+    int savedLinesize2 = mFrame->linesize[2];
+    auto restorePixelFormat = MakeScopeExit([&] {
+      mCodecContext->pix_fmt = savedPixelFormat;
+      mFrame->format = savedFrameFormat;
+      mFrame->data[1] = savedData1;
+      mFrame->data[2] = savedData2;
+      mFrame->linesize[1] = savedLinesize1;
+      mFrame->linesize[2] = savedLinesize2;
+    });
+    UniquePtr<uint8_t[]> planarChroma;
+    if (mFrame->format == AV_PIX_FMT_NV12) {
+      int chromaWidth = (mFrame->width + 1) >> 1;
+      int chromaHeight = (mFrame->height + 1) >> 1;
+      size_t chromaPlaneSize = size_t(chromaWidth) * size_t(chromaHeight);
+      planarChroma = MakeUnique<uint8_t[]>(chromaPlaneSize * 2);
+      uint8_t* cb = planarChroma.get();
+      uint8_t* cr = cb + chromaPlaneSize;
+      for (int y = 0; y < chromaHeight; y++) {
+        uint8_t* src = mFrame->data[1] + y * mFrame->linesize[1];
+        uint8_t* dstCb = cb + y * chromaWidth;
+        uint8_t* dstCr = cr + y * chromaWidth;
+        for (int x = 0; x < chromaWidth; x++) {
+          dstCb[x] = src[x * 2];
+          dstCr[x] = src[x * 2 + 1];
+        }
+      }
+      mFrame->format = AV_PIX_FMT_YUV420P;
+      mFrame->data[1] = cb;
+      mFrame->data[2] = cr;
+      mFrame->linesize[1] = chromaWidth;
+      mFrame->linesize[2] = chromaWidth;
+    }
+    mCodecContext->pix_fmt = static_cast<AVPixelFormat>(mFrame->format);
+    return CreateImage(aOffset, aPts, aDuration, aResults);
+  }
+
   AVDRMFrameDescriptor* desc = (AVDRMFrameDescriptor*)mFrame->data[0];
   if (!desc) {
     return MediaResult(NS_ERROR_DOM_MEDIA_DECODE_ERR,
