@@ -30,5 +30,22 @@ jobs:
       - uses: DeterminateSystems/flakehub-cache-action@main
       - name: Check flake
         run: nix flake check --no-build
+      - name: Check changed files
+        id: changes
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+        run: |
+          set -euo pipefail
+          git diff --name-only "$BASE_SHA" "$HEAD_SHA" > "$RUNNER_TEMP/changed-files"
+          if grep -Ev '^(\.github/|flake\.(nix|lock)$|nix/)' "$RUNNER_TEMP/changed-files"; then
+            echo "source=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "source=false" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Build binary-backed package
+        if: steps.changes.outputs.source == 'false'
+        run: nix build .#default --print-build-logs
       - name: Build Firefox source package
+        if: steps.changes.outputs.source == 'true'
         run: nix build .#unwrapped --print-build-logs
