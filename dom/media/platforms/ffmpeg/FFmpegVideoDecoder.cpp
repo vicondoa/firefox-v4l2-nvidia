@@ -2120,6 +2120,33 @@ MediaResult FFmpegVideoDecoder<LIBAV_VER>::CreateImage(
     }
   }
 #endif
+#if defined(MOZ_USE_HWDECODE) && defined(MOZ_WIDGET_GTK)
+  if (!v && mUsingV4L2) {
+    RefPtr<layers::BufferRecycleBin> recycleBin = new layers::BufferRecycleBin();
+    RefPtr<Image> image = new layers::RecyclingPlanarYCbCrImage(recycleBin);
+    auto* videoImage = image->AsPlanarYCbCrImage();
+    videoImage->SetColorDepth(b.mColorDepth);
+    const auto picture = mInfo.ScaledImageRect(mFrame->width, mFrame->height);
+    FFMPEG_LOG(
+        "V4L2 owned image picture=%d,%d %dx%d y=%ux%u stride=%u cb=%ux%u stride=%u cr=%ux%u stride=%u skip=%u/%u/%u frame=%dx%d",
+        picture.x, picture.y, picture.width, picture.height,
+        b.mPlanes[0].mWidth, b.mPlanes[0].mHeight, b.mPlanes[0].mStride,
+        b.mPlanes[1].mWidth, b.mPlanes[1].mHeight, b.mPlanes[1].mStride,
+        b.mPlanes[2].mWidth, b.mPlanes[2].mHeight, b.mPlanes[2].mStride,
+        b.mPlanes[0].mSkip, b.mPlanes[1].mSkip, b.mPlanes[2].mSkip,
+        mFrame->width, mFrame->height);
+    MediaResult ret = VideoData::SetVideoDataToImage(
+        videoImage, mInfo, b, picture, true /* aCopyData */);
+    if (NS_FAILED(ret)) {
+      FFMPEG_LOG("V4L2 owned image copy failed: %s", ret.Message().get());
+      return ret;
+    }
+    v = VideoData::CreateFromImage(
+        mInfo.mDisplay, aOffset, TimeUnit::FromMicroseconds(aPts),
+        TimeUnit::FromMicroseconds(aDuration), image, IsKeyFrame(mFrame),
+        TimeUnit::FromMicroseconds(mFrame->pkt_dts));
+  }
+#endif
   if (!v) {
     if (m8BitOutput && b.mColorDepth != gfx::ColorDepth::COLOR_8) {
       MediaResult ret = b.To8BitPerChannel(m8BitRecycleBin);
