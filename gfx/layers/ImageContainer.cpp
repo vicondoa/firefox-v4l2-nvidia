@@ -4,6 +4,7 @@
 
 #include "ImageContainer.h"
 
+#include <stdio.h>   // for fprintf
 #include <string.h>  // for memcpy, memset
 
 #include "GLImages.h"    // for SurfaceTextureImage
@@ -928,13 +929,24 @@ nsresult RecyclingPlanarYCbCrImage::CopyData(const Data& aData) {
       CheckedInt<uint32_t>(aData.mYStride) * ySize.height *
           (aData.mAlpha ? 2 : 1);
 
-  if (!checkedSize.isValid()) return NS_ERROR_INVALID_ARG;
+  if (!checkedSize.isValid()) {
+    fprintf(stderr,
+            "nixling-v4l2: RecyclingPlanarYCbCrImage invalid checked size y=%dx%d stride=%d cbcr=%dx%d stride=%d\n",
+            ySize.width, ySize.height, aData.mYStride, cbcrSize.width,
+            cbcrSize.height, aData.mCbCrStride);
+    return NS_ERROR_INVALID_ARG;
+  }
 
   const auto size = checkedSize.value();
 
   // get new buffer
   mBuffer = AllocateBuffer(size);
-  if (!mBuffer) return NS_ERROR_OUT_OF_MEMORY;
+  if (!mBuffer) {
+    fprintf(stderr,
+            "nixling-v4l2: RecyclingPlanarYCbCrImage allocation failed size=%u recycleBin=%p\n",
+            size, mRecycleBin.get());
+    return NS_ERROR_OUT_OF_MEMORY;
+  }
 
   // update buffer size
   mBufferSize = size;
