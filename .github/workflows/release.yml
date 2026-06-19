@@ -51,7 +51,7 @@ jobs:
           VERSION="${GITHUB_REF_NAME}"
           gh release create "$VERSION" release/*.tar.gz release/SHA256SUMS \
             --title "$VERSION" \
-            --notes "Firefox 152.0 with V4L2 H.264 hardware decode patches for NVIDIA/nixling VMs."
+            --notes "Firefox ${VERSION#v} with V4L2 H.264 hardware decode patches for NVIDIA/nixling VMs."
       - uses: DeterminateSystems/nix-installer-action@main
       - uses: DeterminateSystems/flakehub-cache-action@main
       - name: Rebuild and export to binary cache

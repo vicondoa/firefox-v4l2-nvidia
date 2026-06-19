@@ -50,7 +50,7 @@
         ltoSupport = false;
         enableDebugSymbols = false;
       }).overrideAttrs (old: {
-        version = "152.0";
+        version = "152.0.1";
         src = self;
         nativeBuildInputs = (old.nativeBuildInputs or []) ++ [ pkgs.sccache ];
         SCCACHE_DIR = "/var/cache/nixling-firefox-sccache";
