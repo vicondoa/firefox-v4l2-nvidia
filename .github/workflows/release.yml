@@ -53,6 +53,48 @@ jobs:
             --title "$VERSION" \
             --notes "Firefox 152.0 with V4L2 H.264 hardware decode patches for NVIDIA/nixling VMs."
       - uses: DeterminateSystems/nix-installer-action@main
+      - uses: DeterminateSystems/flakehub-cache-action@main
+      - name: Rebuild and export to binary cache
+        env:
+          NIX_CACHE_SIGNING_KEY: ${{ secrets.NIX_CACHE_SIGNING_KEY }}
+        run: |
+          set -euo pipefail
+          CACHE_DIR="$RUNNER_TEMP/nix-cache"
+          SIGNING_KEY="$RUNNER_TEMP/signing-key.pem"
+
+          rm -rf "$CACHE_DIR"
+          nix build .#unwrapped -o result
+          mkdir -p "$CACHE_DIR"
+
+          printf '%s\n' "$NIX_CACHE_SIGNING_KEY" > "$SIGNING_KEY"
+          nix store sign --key-file "$SIGNING_KEY" $(nix path-info -r ./result)
+          nix copy --to "file://$CACHE_DIR" ./result
+
+          printf 'StoreDir: /nix/store\nWantMassQuery: 1\nPriority: 40\n' > "$CACHE_DIR/nix-cache-info"
+          rm -f "$SIGNING_KEY"
+
+      - name: Push GitHub Pages binary cache
+        run: |
+          set -euo pipefail
+          CACHE_DIR="$RUNNER_TEMP/nix-cache"
+          PAGES_DIR="$RUNNER_TEMP/gh-pages"
+
+          rm -rf "$PAGES_DIR"
+          git fetch origin gh-pages
+          git worktree add -B gh-pages "$PAGES_DIR" origin/gh-pages
+
+          mkdir -p "$PAGES_DIR/nar"
+          cp "$CACHE_DIR/nix-cache-info" "$PAGES_DIR/"
+          cp -R "$CACHE_DIR/nar/." "$PAGES_DIR/nar/" 2>/dev/null || true
+          find "$CACHE_DIR" -maxdepth 1 -name '*.narinfo' -exec cp {} "$PAGES_DIR/" \;
+
+          cd "$PAGES_DIR"
+          git add -A
+          git diff --cached --quiet && exit 0
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "cache: add firefox closure"
+          git push origin gh-pages
       - name: Compute SRI hashes and commit prebuilt manifest
         run: |
           set -euo pipefail

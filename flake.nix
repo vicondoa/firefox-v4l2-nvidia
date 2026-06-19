@@ -1,6 +1,11 @@
 {
   description = "Firefox with V4L2 H.264 hardware decode patches for NVIDIA/nixling";
 
+  nixConfig = {
+    extra-substituters = [ "https://vicondoa.github.io/firefox-v4l2-nvidia" ];
+    extra-trusted-public-keys = [ "vicondoa-firefox-v4l2-nvidia:CYUcfzuGgZEx/Eg7ARpP/kE0SiU2bDhU0I3C3tw99fY=" ];
+  };
+
   inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
 
   outputs = { self, nixpkgs }:
