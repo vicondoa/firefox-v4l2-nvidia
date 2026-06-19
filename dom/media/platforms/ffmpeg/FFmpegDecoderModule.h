@@ -96,7 +96,7 @@ class FFmpegDecoderModule : public PlatformDecoderModule {
 #    if LIBAVCODEC_VERSION_MAJOR >= 55
         {AV_CODEC_ID_HEVC, gfx::gfxVars::UseHEVCHwDecode()},
 #    endif
-        {AV_CODEC_ID_H264, gfx::gfxVars::UseH264HwDecode()},
+        {AV_CODEC_ID_H264, true},
 #  endif
 #  ifdef MOZ_WIDGET_ANDROID
         // These proprietary codecs can only be decoded via MediaCodec decoders,
