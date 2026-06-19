@@ -2159,6 +2159,34 @@ bool FFmpegVideoDecoder<LIBAV_VER>::GetVAAPISurfaceDescriptor(
 MediaResult FFmpegVideoDecoder<LIBAV_VER>::CreateImageVAAPI(
     int64_t aOffset, int64_t aPts, int64_t aDuration,
     MediaDataDecoder::DecodedData& aResults) {
+  if (mLib->av_hwframe_transfer_data) {
+    AVFrame* softwareFrame = mLib->av_frame_alloc();
+    auto releaseSoftwareFrame =
+        MakeScopeExit([&] { mLib->av_frame_free(&softwareFrame); });
+    if (softwareFrame &&
+        mLib->av_hwframe_transfer_data(softwareFrame, mFrame, 0) >= 0) {
+      softwareFrame->pts = GetFramePts(mFrame);
+      softwareFrame->pkt_dts = mFrame->pkt_dts;
+#if LIBAVCODEC_VERSION_MAJOR > 61
+      softwareFrame->flags = mFrame->flags;
+#else
+      softwareFrame->key_frame = mFrame->key_frame;
+#endif
+      AVFrame* hardwareFrame = mFrame;
+      AVPixelFormat savedPixelFormat = mCodecContext->pix_fmt;
+      auto restoreFrame = MakeScopeExit([&] {
+        mFrame = hardwareFrame;
+        mCodecContext->pix_fmt = savedPixelFormat;
+      });
+      mFrame = softwareFrame;
+      mCodecContext->pix_fmt =
+          static_cast<AVPixelFormat>(softwareFrame->format);
+      FFMPEG_LOG("VA-API readback frame format=%d", softwareFrame->format);
+      return CreateImage(aOffset, aPts, aDuration, aResults);
+    }
+    FFMPEG_LOG("VA-API readback failed; falling back to dmabuf surface");
+  }
+
   VADRMPRIMESurfaceDescriptor vaDesc;
   if (!GetVAAPISurfaceDescriptor(&vaDesc)) {
     return MediaResult(
@@ -2202,10 +2230,14 @@ MediaResult FFmpegVideoDecoder<LIBAV_VER>::CreateImageVAAPI(
              mInfo.mTransferFunction
                  ? TransferFunctionToString(mInfo.mTransferFunction.value())
                  : "unknown");
+  int64_t timecode = mFrame->pkt_dts;
+  if (timecode == int64_t(AV_NOPTS_VALUE)) {
+    timecode = aPts;
+  }
   RefPtr<VideoData> vp = VideoData::CreateFromImage(
       mInfo.mDisplay, aOffset, TimeUnit::FromMicroseconds(aPts),
       TimeUnit::FromMicroseconds(aDuration), surface->GetAsImage(),
-      IsKeyFrame(mFrame), TimeUnit::FromMicroseconds(mFrame->pkt_dts));
+      IsKeyFrame(mFrame), TimeUnit::FromMicroseconds(timecode));
 
   if (!vp) {
     return MediaResult(NS_ERROR_DOM_MEDIA_DECODE_ERR,
