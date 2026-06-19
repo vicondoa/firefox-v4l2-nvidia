@@ -949,18 +949,17 @@ void FFmpegVideoDecoder<LIBAV_VER>::InitHWDecoderIfAllowed() {
   }
 #  endif
 
+#  ifdef MOZ_ENABLE_V4L2
+  if (NS_SUCCEEDED(InitV4L2Decoder())) {
+    return;
+  }
+#  endif  // MOZ_ENABLE_V4L2
+
 #  ifdef MOZ_ENABLE_VAAPI
   if (NS_SUCCEEDED(InitVAAPIDecoder())) {
     return;
   }
 #  endif  // MOZ_ENABLE_VAAPI
-
-#  ifdef MOZ_ENABLE_V4L2
-  // VAAPI didn't work or is disabled, so try V4L2 with DRM
-  if (NS_SUCCEEDED(InitV4L2Decoder())) {
-    return;
-  }
-#  endif  // MOZ_ENABLE_V4L2
 
 #  ifdef MOZ_ENABLE_D3D11VA
   if (XRE_IsGPUProcess() && NS_SUCCEEDED(InitD3D11VADecoder())) {
