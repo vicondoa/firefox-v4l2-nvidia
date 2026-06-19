@@ -866,6 +866,10 @@ bool FFmpegVideoDecoder<LIBAV_VER>::ShouldDisableHWDecoding(
 #  ifdef MOZ_WIDGET_GTK
   FFMPEG_LOG("Hardware WebRender gate skipped for V4L2-only nixling decoder");
 #  endif
+  if (mCodecID == AV_CODEC_ID_H264) {
+    FFMPEG_LOG("Hardware decode force-enabled for nixling V4L2 H.264");
+    return false;
+  }
   return aDisableHardwareDecoding;
 }
 #endif
