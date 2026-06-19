@@ -1,0 +1,21 @@
+name: PR
+
+on:
+  pull_request:
+
+jobs:
+  nix:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    permissions: {}
+    env:
+      GITHUB_TOKEN: ""
+      ACTIONS_RUNTIME_TOKEN: ""
+    steps:
+      - uses: actions/checkout@v4
+      - uses: DeterminateSystems/nix-installer-action@main
+      - uses: DeterminateSystems/flakehub-cache-action@main
+      - name: Check flake
+        run: nix flake check --no-build
+      - name: Build Firefox source package
+        run: nix build .#unwrapped --print-build-logs
