@@ -191,6 +191,7 @@ struct MOZ_ONLY_USED_TO_AVOID_STATIC_CONSTRUCTORS FFmpegLibWrapper {
                                 int flags);
   AVBufferRef* (*av_hwframe_ctx_alloc)(AVBufferRef* device_ctx);
   int (*av_hwframe_ctx_init)(AVBufferRef* ref);
+  int (*av_hwframe_transfer_data)(AVFrame* dst, const AVFrame* src, int flags);
   int (*avcodec_get_hw_frames_parameters)(AVCodecContext* avctx,
                                           AVBufferRef* device_ref,
                                           int hw_pix_fmt,

@@ -323,6 +323,10 @@ FFmpegLibWrapper::LinkResult FFmpegLibWrapper::Link() {
                         AV_FUNC_AVUTIL_58 | AV_FUNC_AVUTIL_59 |
                             AV_FUNC_AVUTIL_60 | AV_FUNC_AVUTIL_61 |
                             AV_FUNC_AVUTIL_62)
+  AV_FUNC_OPTION_SILENT(av_hwframe_transfer_data,
+                        AV_FUNC_AVUTIL_58 | AV_FUNC_AVUTIL_59 |
+                            AV_FUNC_AVUTIL_60 | AV_FUNC_AVUTIL_61 |
+                            AV_FUNC_AVUTIL_62)
   AV_FUNC_OPTION_SILENT(av_hwframe_map, AV_FUNC_AVUTIL_58 | AV_FUNC_AVUTIL_59 |
                                             AV_FUNC_AVUTIL_60 |
                                             AV_FUNC_AVUTIL_61 |
