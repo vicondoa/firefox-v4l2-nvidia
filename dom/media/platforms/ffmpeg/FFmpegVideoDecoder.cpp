@@ -1662,8 +1662,15 @@ MediaResult FFmpegVideoDecoder<LIBAV_VER>::DoDecode(
             RESULT_DETAIL("HW decoding is slow, switching back to SW decode"));
       }
       if (mUsingV4L2) {
-        rv = CreateImageV4L2(fpos, GetFramePts(mFrame), Duration(mFrame),
-                             aResults);
+        int64_t pts = GetFramePts(mFrame);
+        if (pts == int64_t(AV_NOPTS_VALUE)) {
+          pts = aSample->mTime.ToMicroseconds();
+        }
+        int64_t duration = Duration(mFrame);
+        if (duration <= 0) {
+          duration = aSample->mDuration.ToMicroseconds();
+        }
+        rv = CreateImageV4L2(fpos, pts, duration, aResults);
       }
 #      if LIBAVCODEC_VERSION_MAJOR >= 60 && !defined(FFVPX_VERSION)
       else if (mVulkanDeviceContext) {
