@@ -864,14 +864,7 @@ bool FFmpegVideoDecoder<LIBAV_VER>::ShouldDisableHWDecoding(
 #  endif
 
 #  ifdef MOZ_WIDGET_GTK
-  bool isHardwareWebRenderUsed = mImageAllocator &&
-                                 (mImageAllocator->GetCompositorBackendType() ==
-                                  layers::LayersBackend::LAYERS_WR) &&
-                                 !mImageAllocator->UsingSoftwareWebRender();
-  if (!isHardwareWebRenderUsed) {
-    FFMPEG_LOG("Hardware WebRender is off, VAAPI is disabled");
-    return true;
-  }
+  FFMPEG_LOG("Hardware WebRender gate skipped for V4L2-only nixling decoder");
 #  endif
   return aDisableHardwareDecoding;
 }
