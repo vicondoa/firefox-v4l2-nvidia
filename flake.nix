@@ -38,6 +38,28 @@
         postFixup = ''
           wrapGApp $out/bin/firefox
         '';
+        passthru = {
+          # programs.firefox NixOS module calls package.override to inject
+          # extraPrefsFiles, nativeMessagingHosts, and cfg. Accept those
+          # and re-derive with the additions applied.
+          override = overrideFn: let
+            args = overrideFn {
+              extraPrefsFiles = [];
+              nativeMessagingHosts = [];
+              cfg = {};
+            };
+          in prebuiltPackage.overrideAttrs (old: {
+            buildCommand = old.buildCommand or "";
+            nativeBuildInputs = (old.nativeBuildInputs or [])
+              ++ (args.nativeMessagingHosts or []);
+            postInstall = (old.postInstall or "") + ''
+              ${builtins.concatStringsSep "\n" (map (f:
+                "install -Dm644 ${f} $out/lib/firefox/defaults/pref/$(basename ${f})"
+              ) (args.extraPrefsFiles or []))}
+            '';
+          });
+          version = manifest.version;
+        };
         meta = {
           description = "Firefox with V4L2 H.264 hardware decode (pre-built)";
           mainProgram = "firefox";
