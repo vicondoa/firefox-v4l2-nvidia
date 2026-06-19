@@ -1,0 +1,87 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - "v*-nixling.*"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    permissions: {}
+    env:
+      GITHUB_TOKEN: ""
+      ACTIONS_RUNTIME_TOKEN: ""
+    steps:
+      - uses: actions/checkout@v4
+      - uses: DeterminateSystems/nix-installer-action@main
+      - uses: DeterminateSystems/flakehub-cache-action@main
+      - name: Build Firefox (unwrapped)
+        run: nix build .#unwrapped -o result
+      - name: Package
+        run: |
+          set -euo pipefail
+          VERSION="${GITHUB_REF_NAME}"
+          mkdir -p release
+          tar czf "release/firefox-v4l2-nvidia-${VERSION}-x86_64-linux.tar.gz" -C result .
+          cd release
+          sha256sum *.tar.gz > SHA256SUMS
+      - uses: actions/upload-artifact@v4
+        with:
+          name: release-binaries
+          path: release/
+
+  release:
+    needs: [build]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: release-binaries
+          path: release/
+      - name: Create GitHub Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          VERSION="${GITHUB_REF_NAME}"
+          gh release create "$VERSION" release/*.tar.gz release/SHA256SUMS \
+            --title "$VERSION" \
+            --notes "Firefox 152.0 with V4L2 H.264 hardware decode patches for NVIDIA/nixling VMs."
+      - uses: DeterminateSystems/nix-installer-action@main
+      - name: Compute SRI hashes and commit prebuilt manifest
+        run: |
+          set -euo pipefail
+          VERSION="${GITHUB_REF_NAME}"
+          REPO="${{ github.repository }}"
+          git fetch origin nixling/main
+          git switch -C nixling/main origin/nixling/main
+          mkdir -p nix
+          tarball=$(find release/ -name "*.tar.gz" | head -1)
+          sri=$(nix hash file --type sha256 --sri "$tarball")
+          url="https://github.com/${REPO}/releases/download/${VERSION}/$(basename "$tarball")"
+          cat > nix/prebuilt.json <<EOF
+          {
+            "version": "$VERSION",
+            "system": "x86_64-linux",
+            "binaries": {
+              "firefox-v4l2-nvidia": {
+                "url": "$url",
+                "hash": "$sri"
+              }
+            }
+          }
+          EOF
+      - name: Commit prebuilt manifest
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add nix/prebuilt.json
+          git diff --cached --quiet && exit 0
+          git commit -m "release: update prebuilt manifest for ${GITHUB_REF_NAME}"
+          git push origin HEAD:refs/heads/nixling/main
