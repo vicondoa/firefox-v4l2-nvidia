@@ -26,10 +26,6 @@ jobs:
           fi
           df -h
       - uses: actions/checkout@v4
-      - uses: DeterminateSystems/nix-installer-action@main
-      - uses: DeterminateSystems/flakehub-cache-action@main
-      - name: Check flake
-        run: nix flake check --no-build
       - name: Check changed files
         id: changes
         env:
@@ -43,6 +39,11 @@ jobs:
           else
             echo "source=false" >> "$GITHUB_OUTPUT"
           fi
+      - uses: DeterminateSystems/nix-installer-action@main
+      - uses: DeterminateSystems/flakehub-cache-action@main
+        if: steps.changes.outputs.source == 'true'
+      - name: Check flake
+        run: nix flake check --no-build
       - name: Build binary-backed package
         if: steps.changes.outputs.source == 'false'
         run: nix build .#default --print-build-logs
