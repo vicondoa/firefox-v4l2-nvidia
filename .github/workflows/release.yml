@@ -26,6 +26,7 @@ jobs:
           df -h
       - uses: actions/checkout@v4
         with:
+          filter: blob:none
           fetch-depth: 0
       - uses: DeterminateSystems/nix-installer-action@main
       - uses: DeterminateSystems/flakehub-cache-action@main
@@ -66,6 +67,7 @@ jobs:
           df -h
       - uses: actions/checkout@v4
         with:
+          filter: blob:none
           fetch-depth: 0
       - uses: actions/download-artifact@v4
         with:
