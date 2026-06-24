@@ -19,12 +19,12 @@
         src = pkgs.fetchurl {
           inherit (manifest.binaries."firefox-v4l2-nvidia") url hash;
         };
-        nativeBuildInputs = with pkgs; [ autoPatchelfHook wrapGAppsHook3 ];
+        nativeBuildInputs = with pkgs; [ autoPatchelfHook makeWrapper wrapGAppsHook3 ];
         buildInputs = with pkgs; [
           stdenv.cc.cc.lib gtk3 glib dbus-glib libXt alsa-lib
           pulseaudio ffmpeg libGL pango atk gdk-pixbuf cairo
           fontconfig freetype libxkbcommon wayland
-          nspr nss cups libdrm mesa libva protobuf
+          nspr nss_latest cups libdrm mesa libva protobuf
           xorg.libX11 xorg.libXcomposite xorg.libXdamage xorg.libXext
           xorg.libXfixes xorg.libXrandr xorg.libxcb
         ];
@@ -39,6 +39,9 @@
           cp -a bin $out/ 2>/dev/null || true
         '';
         postFixup = ''
+          rm -f $out/bin/firefox $out/bin/.firefox-wrapped $out/bin/.firefox-wrapped_
+          makeWrapper $out/lib/firefox/firefox $out/bin/firefox \
+            --prefix LD_LIBRARY_PATH : ${pkgs.lib.makeLibraryPath [ pkgs.nss_latest ]}
           wrapGApp $out/bin/firefox
         '';
         passthru = {
