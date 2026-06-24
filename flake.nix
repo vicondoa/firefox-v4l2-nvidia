@@ -10,6 +10,33 @@
 
       manifest = builtins.fromJSON (builtins.readFile ./nix/prebuilt.json);
       firefoxVersion = "152.0.2";
+      firefoxPolicies = {
+        Preferences = {
+          "media.hardware-video-decoding.enabled" = {
+            Status = "locked";
+            Value = true;
+          };
+          "media.hardware-video-decoding.force-enabled" = {
+            Status = "locked";
+            Value = true;
+          };
+          "media.ffmpeg.enabled" = {
+            Status = "locked";
+            Value = true;
+          };
+          "media.rdd-ffmpeg.enabled" = {
+            Status = "locked";
+            Value = true;
+          };
+          "media.ffmpeg.disable-software-fallback" = {
+            Status = "locked";
+            Value = true;
+          };
+        };
+      };
+      policiesJson = pkgs.writeText "firefox-policies.json" (builtins.toJSON {
+        policies = firefoxPolicies;
+      });
       hasPrebuilt = manifest.version != null
         && manifest.binaries ? "firefox-v4l2-nvidia"
         && system == manifest.system;
@@ -43,6 +70,7 @@
           rm -f $out/bin/firefox $out/bin/.firefox-wrapped $out/bin/.firefox-wrapped_
           makeWrapper $out/lib/firefox/firefox $out/bin/firefox \
             --prefix LD_LIBRARY_PATH : ${pkgs.lib.makeLibraryPath [ pkgs.nss_latest ]}
+          install -Dm644 ${policiesJson} $out/lib/firefox/distribution/policies.json
           wrapGApp $out/bin/firefox
         '';
         passthru = {
@@ -92,20 +120,7 @@
       });
 
       sourcePackage = (pkgs.wrapFirefox firefoxUnwrapped {
-        extraPolicies.Preferences = {
-          "media.ffmpeg.v4l2-m2m.enabled" = {
-            Status = "locked";
-            Value = true;
-          };
-          "media.ffmpeg.vaapi.enabled" = {
-            Status = "locked";
-            Value = false;
-          };
-          "media.ffmpeg.vaapi.force-enabled" = {
-            Status = "locked";
-            Value = false;
-          };
-        };
+        extraPolicies = firefoxPolicies;
       }).overrideAttrs (old: {
         version = firefoxVersion;
         passthru = (old.passthru or {}) // {
