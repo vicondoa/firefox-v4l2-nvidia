@@ -9,7 +9,9 @@
       pkgs = import nixpkgs { inherit system; };
 
       manifest = builtins.fromJSON (builtins.readFile ./nix/prebuilt.json);
+      firefoxVersion = "152.0.2";
       hasPrebuilt = manifest.version != null
+        && builtins.match "v${firefoxVersion}-nixling\\..*" manifest.version != null
         && manifest.binaries ? "firefox-v4l2-nvidia"
         && system == manifest.system;
 
@@ -78,8 +80,11 @@
         ltoSupport = false;
         enableDebugSymbols = false;
       }).overrideAttrs (old: {
-        version = "152.0.2";
+        version = firefoxVersion;
         src = self;
+        passthru = (old.passthru or {}) // {
+          version = firefoxVersion;
+        };
         nativeBuildInputs = (old.nativeBuildInputs or []) ++ [ pkgs.sccache ];
         SCCACHE_DIR = "/var/cache/nixling-firefox-sccache";
         SCCACHE_MAX_FRAME_LENGTH = "104857600";
@@ -87,7 +92,7 @@
         RUSTC_WRAPPER = "${pkgs.sccache}/bin/sccache";
       });
 
-      sourcePackage = pkgs.wrapFirefox firefoxUnwrapped {
+      sourcePackage = (pkgs.wrapFirefox firefoxUnwrapped {
         extraPolicies.Preferences = {
           "media.ffmpeg.v4l2-m2m.enabled" = {
             Status = "locked";
@@ -102,7 +107,12 @@
             Value = false;
           };
         };
-      };
+      }).overrideAttrs (old: {
+        version = firefoxVersion;
+        passthru = (old.passthru or {}) // {
+          version = firefoxVersion;
+        };
+      });
     in {
       packages.${system} = {
         default = if hasPrebuilt then prebuiltPackage else sourcePackage;

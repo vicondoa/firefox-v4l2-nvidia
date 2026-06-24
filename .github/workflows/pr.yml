@@ -2,6 +2,7 @@ name: PR
 
 on:
   pull_request:
+  workflow_dispatch:
 
 jobs:
   nix:
@@ -29,11 +30,17 @@ jobs:
       - name: Check changed files
         id: changes
         env:
-          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          BASE_SHA: ${{ github.event.pull_request.base.sha || '' }}
         run: |
           set -euo pipefail
-          git fetch --no-tags --depth=1 origin "$BASE_SHA"
-          git diff --name-only "$BASE_SHA" HEAD > "$RUNNER_TEMP/changed-files"
+          if [ -n "$BASE_SHA" ]; then
+            git fetch --no-tags --depth=1 origin "$BASE_SHA"
+            base="$BASE_SHA"
+          else
+            git fetch --no-tags --depth=1 origin nixling/main
+            base="origin/nixling/main"
+          fi
+          git diff --name-only "$base" HEAD > "$RUNNER_TEMP/changed-files"
           if grep -Ev '^(\.github/|flake\.(nix|lock)$|nix/)' "$RUNNER_TEMP/changed-files"; then
             echo "source=true" >> "$GITHUB_OUTPUT"
           else
