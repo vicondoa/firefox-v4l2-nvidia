@@ -12,9 +12,6 @@ jobs:
     permissions:
       contents: read
       id-token: write
-    env:
-      GITHUB_TOKEN: ""
-      ACTIONS_RUNTIME_TOKEN: ""
     steps:
       - name: Free runner disk space
         run: |
@@ -49,6 +46,7 @@ jobs:
     needs: [build]
     runs-on: ubuntu-latest
     permissions:
+      actions: write
       contents: write
       id-token: write
       pull-requests: write
@@ -165,3 +163,4 @@ jobs:
               --title "release: update prebuilt manifest for ${VERSION}" \
               --body "Update nix/prebuilt.json for ${VERSION} after the release artifacts were published."
           fi
+          gh workflow run pr.yml --ref "$BRANCH"
