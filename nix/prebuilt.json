@@ -1,10 +1,10 @@
 {
-  "version": "v152.0.1-nixling.1",
+  "version": "v152.0.1-nixling.2",
   "system": "x86_64-linux",
   "binaries": {
     "firefox-v4l2-nvidia": {
-      "url": "https://github.com/vicondoa/firefox-v4l2-nvidia/releases/download/v152.0.1-nixling.1/firefox-v4l2-nvidia-v152.0.1-nixling.1-x86_64-linux.tar.gz",
-      "hash": "sha256-40nuK+siaxKbTlziVuqVJlB7XD6t/KA6lKAxpAMHN94="
+      "url": "https://github.com/vicondoa/firefox-v4l2-nvidia/releases/download/v152.0.1-nixling.2/firefox-v4l2-nvidia-v152.0.1-nixling.2-x86_64-linux.tar.gz",
+      "hash": "sha256-MN9jgSI+bDH6/EExwW0z9glOV8ctHmh7didPhI26upE="
     }
   }
 }
