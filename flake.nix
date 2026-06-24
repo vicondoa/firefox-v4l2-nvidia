@@ -11,7 +11,6 @@
       manifest = builtins.fromJSON (builtins.readFile ./nix/prebuilt.json);
       firefoxVersion = "152.0.2";
       hasPrebuilt = manifest.version != null
-        && builtins.match "v${firefoxVersion}-nixling\\..*" manifest.version != null
         && manifest.binaries ? "firefox-v4l2-nvidia"
         && system == manifest.system;
 
