@@ -25,6 +25,8 @@ jobs:
           fi
           df -h
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: DeterminateSystems/nix-installer-action@main
       - uses: DeterminateSystems/flakehub-cache-action@main
       - name: Build Firefox (unwrapped)
@@ -63,6 +65,8 @@ jobs:
           fi
           df -h
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/download-artifact@v4
         with:
           name: release-binaries
