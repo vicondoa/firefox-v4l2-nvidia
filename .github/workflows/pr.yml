@@ -38,7 +38,7 @@ jobs:
             base="$BASE_SHA"
           else
             git fetch --no-tags --depth=1 origin nixling/main
-            base="origin/nixling/main"
+            base="FETCH_HEAD"
           fi
           git diff --name-only "$base" HEAD > "$RUNNER_TEMP/changed-files"
           if grep -Ev '^(\.github/|flake\.(nix|lock)$|nix/)' "$RUNNER_TEMP/changed-files"; then
