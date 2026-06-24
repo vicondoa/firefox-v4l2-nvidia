@@ -1,0 +1,11 @@
+StorePath: /nix/store/vg3wx5csgpsix6b76n71nkrlj52q9018-unbound-1.25.0-lib
+URL: nar/1731hjl5h18lqcj3y1ad4nizvh39zk96yxzp9ah4m0rrhmyx672b.nar.xz
+Compression: xz
+FileHash: sha256:1731hjl5h18lqcj3y1ad4nizvh39zk96yxzp9ah4m0rrhmyx672b
+FileSize: 431376
+NarHash: sha256:1by2g7r164ygmkc8ym86589ask0iwdf5zbh4z04d6d496n6apkqs
+NarSize: 1182016
+References: 1x7jd3s747a24p4fsywfldb629plxacq-libevent-2.1.12 57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61 mrvg2vykjhhdlh28bh7h3mqrnmyiajzw-nettle-3.10.2 vg3wx5csgpsix6b76n71nkrlj52q9018-unbound-1.25.0-lib y56aqb1m3y5davn6hsv4jfbml78qw4mv-gmp-with-cxx-6.3.0
+Deriver: kjnq2in3nw8xx3b85xr502hg5bgpah1y-unbound-1.25.0.drv
+Sig: cache.nixos.org-1:4cpU+c6PHvVTgmPcKfK2zo0wamOOok3AEh3AirplWLBRICOTkI0rgL1nQcNsfDP3rrpcQBRwCVyRoX+oWMjOAA==
+Sig: vicondoa-firefox-v4l2-nvidia:RuxmJ4DsiBkzoIGbKI3aPKI6k1tXgQXv2mcG3Cy+wIBsT7ydXKdah27hVHf8lw32OgkmWqqCt5ybdLgpHV6xBw==

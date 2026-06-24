@@ -1,0 +1,11 @@
+StorePath: /nix/store/4k8ni0f9pf1r5l9mlaqs9f4qflzi59k6-json-glib-1.10.8
+URL: nar/1ypxiqbb1d5nwag5hdi730lqz7ym90932xrl2hbr4i8r616vqvd5.nar.xz
+Compression: xz
+FileHash: sha256:1ypxiqbb1d5nwag5hdi730lqz7ym90932xrl2hbr4i8r616vqvd5
+FileSize: 124980
+NarHash: sha256:1mw38615g78l9ca67s1znvycjds0b5247c4r4czm1sl2b3zvk5zb
+NarSize: 678792
+References: 4k8ni0f9pf1r5l9mlaqs9f4qflzi59k6-json-glib-1.10.8 57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61 jlyahda14aya375lv7k9fsin2zk90nxz-glib-2.88.1
+Deriver: n681lh9rpv5hv589yd12jrnnf3mdd1w6-json-glib-1.10.8.drv
+Sig: cache.nixos.org-1:IfAQmA8TdYFhho601SouPePe7f/LOTdvulCjBW5vD6daiQ7I4ASKhOkB4ZuzJwlSiqWW1WRhOllNpFMo820JBA==
+Sig: vicondoa-firefox-v4l2-nvidia:NjAK8tdJdjW4WXuR4/8/Nj6AUN0ddWgSHpTJnFhLceyhRL24ClNMDKFj4v/gpVa+5ecIyGISc2HajhkUaT3pCQ==

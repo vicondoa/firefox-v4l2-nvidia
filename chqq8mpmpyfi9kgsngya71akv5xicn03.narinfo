@@ -1,0 +1,9 @@
+StorePath: /nix/store/chqq8mpmpyfi9kgsngya71akv5xicn03-gcc-15.2.0-lib
+URL: nar/0hi6xz32xkhp62l09rn0sqi557rn4l7z6vfax5fslc8q6dqn7y3f.nar.xz
+Compression: xz
+FileHash: sha256:0hi6xz32xkhp62l09rn0sqi557rn4l7z6vfax5fslc8q6dqn7y3f
+FileSize: 2096708
+NarHash: sha256:0yr0kk8zabv84bd9gy4nhy7ps544d6q7zqny8m5yr1cmd2w1a1wf
+NarSize: 10313656
+References: 57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61 chqq8mpmpyfi9kgsngya71akv5xicn03-gcc-15.2.0-lib xyikkpwkyxx6syba3kfrr0h67ig5hwmn-gcc-15.2.0-libgcc
+Sig: vicondoa-firefox-v4l2-nvidia:060hZK+I5lUbRjh59d6fsW+Piya3Bif/VhzWmVuaP+dgrim6iVw425b7VElWJnQgjlyybtoVRBG05rAculrRDA==

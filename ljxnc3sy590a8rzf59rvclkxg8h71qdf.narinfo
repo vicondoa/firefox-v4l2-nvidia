@@ -1,0 +1,9 @@
+StorePath: /nix/store/ljxnc3sy590a8rzf59rvclkxg8h71qdf-libxcursor-1.2.3
+URL: nar/0fy2slbaizrfd9rmn540j4jdn0d6x0l9wz5d40sshh15nj7ijr7p.nar.xz
+Compression: xz
+FileHash: sha256:0fy2slbaizrfd9rmn540j4jdn0d6x0l9wz5d40sshh15nj7ijr7p
+FileSize: 28460
+NarHash: sha256:09lnjy01sg7prm5lid1a46w3i99xwwym9z55dgv133zy724a4jnw
+NarSize: 79824
+References: 57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61 7gwd2kvkx1s369cwiv5z4x2xjxbppav6-libx11-1.8.13 f9yj1bxn989y7fdrb4jaxd7kjrm3ajbk-libxfixes-6.0.2 ljxnc3sy590a8rzf59rvclkxg8h71qdf-libxcursor-1.2.3 miig9y3gfv5ykavp6zva2jg1c1sq2qc3-libxrender-0.9.12
+Sig: vicondoa-firefox-v4l2-nvidia:e8CThXWWo3Cq1Jy04l8erBO3matnLy/JVDhaMF0Mh80fA7q9kLD763s68rKV7J0B5g8fHKa/7gIK61tfFOTDCg==

@@ -1,0 +1,9 @@
+StorePath: /nix/store/bf6wgamqnl3c91iamlb1branrfcwwy7x-libunistring-1.4.2
+URL: nar/05w39nqcylg59pnw1zcnbypyaiywmi8sa0g442awhd5766576nir.nar.xz
+Compression: xz
+FileHash: sha256:05w39nqcylg59pnw1zcnbypyaiywmi8sa0g442awhd5766576nir
+FileSize: 465104
+NarHash: sha256:0iawd3p7q4g19v0vk8jbj7s9za5qnksadp5s22r401yk9s456fsj
+NarSize: 2078944
+References: bf6wgamqnl3c91iamlb1branrfcwwy7x-libunistring-1.4.2
+Sig: vicondoa-firefox-v4l2-nvidia:pL7aymBZVLsDL+fYLE+J5UeQhfCFx1bBkRIElbxnmAEp1BZ2NORPD6a3wk3opOl/jb+IUVRghnAeApW43d4CAg==

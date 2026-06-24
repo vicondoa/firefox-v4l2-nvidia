@@ -1,0 +1,9 @@
+StorePath: /nix/store/yxla342pd0453pz2k0yybnyy1hig8dv4-acl-2.3.2
+URL: nar/1b2x3hmxh9vr69mv3iy51k5qn0f3np12q33rv3qnga8vsilhf9p3.nar.xz
+Compression: xz
+FileHash: sha256:1b2x3hmxh9vr69mv3iy51k5qn0f3np12q33rv3qnga8vsilhf9p3
+FileSize: 25656
+NarHash: sha256:1v09pn2m8cd4j90bqznhxzzkxnp7a4ma8nbdgj2jb23rvmj7v112
+NarSize: 128224
+References: 57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61 v2dzxxlyf0z8njnr3nar1wmdiw6hssb6-attr-2.5.2 yxla342pd0453pz2k0yybnyy1hig8dv4-acl-2.3.2
+Sig: vicondoa-firefox-v4l2-nvidia:UD82mq6u+rq1XSW4rnJk8y2cqUaI/i5D6heL1trBCngEebbDB0aWL6p9lPyZCfNk8sy4+AH95qASDSZ4SbDOBQ==

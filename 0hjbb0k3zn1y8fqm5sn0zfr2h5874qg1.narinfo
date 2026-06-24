@@ -1,0 +1,9 @@
+StorePath: /nix/store/0hjbb0k3zn1y8fqm5sn0zfr2h5874qg1-libxdmcp-1.1.5
+URL: nar/0zb43r4169n4jk4izphc9784hi242s020mb38ajwdmiv9h3qj5ns.nar.xz
+Compression: xz
+FileHash: sha256:0zb43r4169n4jk4izphc9784hi242s020mb38ajwdmiv9h3qj5ns
+FileSize: 8572
+NarHash: sha256:01h60q52shzdmwsna02a0dpyjznppmsy94rqvrp2jgpdxp8ak4kc
+NarSize: 31912
+References: 0hjbb0k3zn1y8fqm5sn0zfr2h5874qg1-libxdmcp-1.1.5 57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61
+Sig: vicondoa-firefox-v4l2-nvidia:LwIUvuVCkOXLtzbhQIVZ9q5PTcbRsXHy199izsoJWZW7Ol0kG5KynYF4JfMwTvFck14exMV1NcQLJrxCRGBYDQ==

@@ -1,0 +1,11 @@
+StorePath: /nix/store/srn27ymz85mv7nbwkv1lyhi7g91cvyh7-fribidi-1.0.16
+URL: nar/0by4bs41pma2jlx2pl62qxb8dm42vji3gh1sk70qkxcsqg2n3215.nar.xz
+Compression: xz
+FileHash: sha256:0by4bs41pma2jlx2pl62qxb8dm42vji3gh1sk70qkxcsqg2n3215
+FileSize: 27004
+NarHash: sha256:0gwall5s1hhf926arkn9gmkxr2hw0af8x9f7bzjsz7rdkh6n4irh
+NarSize: 166400
+References: 57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61 srn27ymz85mv7nbwkv1lyhi7g91cvyh7-fribidi-1.0.16
+Deriver: fh63gdkcs4qa9dmw7ci11vl5rhhjhbcq-fribidi-1.0.16.drv
+Sig: cache.nixos.org-1:Zt/qdlIKbM4cnkX2GGD3WTLxfaUTWxkPKtbgRqYEgd8Aa8hwsO08V4nKfCOgmNpQFou7NqFAA4BHlrjknN5bAw==
+Sig: vicondoa-firefox-v4l2-nvidia:fNiPhMjbY3jd5BAw4Q0NdHjnmiveXhAg4LsOqxJ+OSuGwvoni7xdpLc2AGXLFx6qXTnV0kkmzdAKfisRmA5GAg==

@@ -1,0 +1,9 @@
+StorePath: /nix/store/wn2byajlpr3w4pii81n6r0bjfrp5ca31-keyutils-1.6.3-lib
+URL: nar/00gpqww4mnyv00qdvn79gw9w49qk7gxprsgh445j85z7x1rh70nb.nar.xz
+Compression: xz
+FileHash: sha256:00gpqww4mnyv00qdvn79gw9w49qk7gxprsgh445j85z7x1rh70nb
+FileSize: 8080
+NarHash: sha256:11f4d7ikjxyf0ry5yd9gpps1d7lsscdkwy3ppnygqyzpf4l3xqq5
+NarSize: 42848
+References: 57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61
+Sig: vicondoa-firefox-v4l2-nvidia:mWjlEPSlw2JX79ThDQKbn8fTOqGCispUOcCc8jsRe0miN7u/WQUivI9paNUulYEJqq3/00JCai9yiAK8jM4kDw==

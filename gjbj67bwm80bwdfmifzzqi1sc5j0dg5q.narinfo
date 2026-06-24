@@ -1,0 +1,9 @@
+StorePath: /nix/store/gjbj67bwm80bwdfmifzzqi1sc5j0dg5q-libvpx-1.16.0
+URL: nar/1z0aryf5wb1aim5dmkkl2cwxlsal33v7yhfsa98y8nqc8xvnlpyh.nar.xz
+Compression: xz
+FileHash: sha256:1z0aryf5wb1aim5dmkkl2cwxlsal33v7yhfsa98y8nqc8xvnlpyh
+FileSize: 1375728
+NarHash: sha256:03sw2kbsyrljrbdrkkj9bccrfkbfwfnsxhi0bkwvain7rv9dsb7g
+NarSize: 9346776
+References: 57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61 chqq8mpmpyfi9kgsngya71akv5xicn03-gcc-15.2.0-lib gjbj67bwm80bwdfmifzzqi1sc5j0dg5q-libvpx-1.16.0
+Sig: vicondoa-firefox-v4l2-nvidia:SWxVt6fuH/WxTT7RlcEQpz6ySiK9pUGBtaLpZh1JGIBxVSvL0cuAh+cBFkMnURz4sWTKF9I/CJoxuRbePSAnDg==

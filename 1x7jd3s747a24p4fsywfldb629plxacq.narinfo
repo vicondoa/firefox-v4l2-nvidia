@@ -1,0 +1,9 @@
+StorePath: /nix/store/1x7jd3s747a24p4fsywfldb629plxacq-libevent-2.1.12
+URL: nar/01fr2fiaj1gfq3qzph23dm5i6g0r61wxs3zrsf9rlxff30p9pa2x.nar.xz
+Compression: xz
+FileHash: sha256:01fr2fiaj1gfq3qzph23dm5i6g0r61wxs3zrsf9rlxff30p9pa2x
+FileSize: 188884
+NarHash: sha256:0l91yvgqpd9div7hkscx83210q9x0d02pb3aljyvpxmgb581w3kk
+NarSize: 882384
+References: 1x7jd3s747a24p4fsywfldb629plxacq-libevent-2.1.12 57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61
+Sig: vicondoa-firefox-v4l2-nvidia:VXwvznnUHJxn4U9Mzq+VUC+HJumugzwnE34NClPx/OHhiQaDAEBz+3dDfAyGq3c/qB7Otj5EMcO6oE9Gg/HlBQ==

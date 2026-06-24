@@ -1,0 +1,11 @@
+StorePath: /nix/store/40kvg6g8ww9k9d116fiv7r9kwxhg4n7s-libwebp-1.6.0
+URL: nar/0iqwad9rspj2k89rwkm7gnvy21lmxx4scbhwxwx2jsyk3imh5chg.nar.xz
+Compression: xz
+FileHash: sha256:0iqwad9rspj2k89rwkm7gnvy21lmxx4scbhwxwx2jsyk3imh5chg
+FileSize: 456592
+NarHash: sha256:1jmdzkbr538cnrk1ghabvnw76gbvfqv12khgwgwh63nqb4n2ybia
+NarSize: 1782064
+References: 40kvg6g8ww9k9d116fiv7r9kwxhg4n7s-libwebp-1.6.0 57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61 61a1nwx3w6rqyaisj5rn1sal1981apm7-zlib-1.3.2 ifng2dpzr1xi45w2px709xzq6fhfqlj3-giflib-5.2.2 j5pf7byjv0ahvxcnkd5jsw481i82d7ng-libjpeg-turbo-3.1.4 jjp9vc7vfrflxnliwkwblzadnyyw2zj2-libtiff-4.7.1 vqyqaaar0dvcdbmzsap60r96n1va0idd-libpng-apng-1.6.56
+Deriver: ngvvj73wky2frwbgry1nxhayn723cj67-libwebp-1.6.0.drv
+Sig: cache.nixos.org-1:Q1utfJTxnP6c8UPWpmQHgpSnPSRxHIdYPTQfe+XxEftUxkUwwxrmnWZRvzS06JMt+jNLgiR8E7/jtdx8Z+r2Dw==
+Sig: vicondoa-firefox-v4l2-nvidia:9P/wHtLl3jx+yGbR6RouPnSs+EUEHXlAUFBVdRyS3odWCXIDVWpIUJpbWf7DNtCjZHfDP3XxQGXWhE14wq77Dw==

@@ -1,0 +1,11 @@
+StorePath: /nix/store/ssxizwayfsgz2c6nrn8yagks0zri9mm0-libdatrie-2019-12-20-lib
+URL: nar/1qyi5rn9305bz4cl41389pj5s9yngvbliw6ahgdz66mkk7k92kr7.nar.xz
+Compression: xz
+FileHash: sha256:1qyi5rn9305bz4cl41389pj5s9yngvbliw6ahgdz66mkk7k92kr7
+FileSize: 13768
+NarHash: sha256:0kbaimxc0css677arkm576s9zsbgmmj7b53g1c63h9kk27z5b0l8
+NarSize: 43240
+References: 57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61 ssxizwayfsgz2c6nrn8yagks0zri9mm0-libdatrie-2019-12-20-lib
+Deriver: 84f2gqjll1zwp6xgjx425x6rqni2mjpa-libdatrie-2019-12-20.drv
+Sig: cache.nixos.org-1:Y4O3nhomEkirA2Oz+CSt8tbp9FTmUu9WpLpdhuaqZ2E7ykvipAbTD9wuINTlV6ldTLQQv8VSWFpRNbEXwAwkDg==
+Sig: vicondoa-firefox-v4l2-nvidia:RHVWFGJTGmB1kcoptifO80fyd04PmUXfKCLO8HJmL7U3t4fxwOD9hC4R2ko30oAQvxDjOp7cmt6PT+tmPrsnAg==

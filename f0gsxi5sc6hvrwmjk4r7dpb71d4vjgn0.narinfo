@@ -1,0 +1,11 @@
+StorePath: /nix/store/f0gsxi5sc6hvrwmjk4r7dpb71d4vjgn0-libpsl-0.21.5
+URL: nar/0dcm4zh3vj2g4sw5vf77133wbjf9cvnl9wmzlszcwdix3rvsp8yl.nar.xz
+Compression: xz
+FileHash: sha256:0dcm4zh3vj2g4sw5vf77133wbjf9cvnl9wmzlszcwdix3rvsp8yl
+FileSize: 59548
+NarHash: sha256:0gm15x3ifzdwcrdymw78bf18xykj8wz8a3dvp7x6c165n6p0by21
+NarSize: 117608
+References: 093bbkmklv9vznvdpg1dmdmirdf3acjg-publicsuffix-list-0-unstable-2026-03-26 57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61 6qa00czc79b3nb6ld0mdyacfp2p1k3jx-libidn2-2.3.8 bf6wgamqnl3c91iamlb1branrfcwwy7x-libunistring-1.4.2 f0gsxi5sc6hvrwmjk4r7dpb71d4vjgn0-libpsl-0.21.5
+Deriver: lc7bkhha92np948nmfh3r97dh9xdzan9-libpsl-0.21.5.drv
+Sig: cache.nixos.org-1:AxM/KgdjKkaQ2TYhEe+2EcvjzFJWC2g2bQMXEqaUf1qLvRV24i5QGvnZGRog9NRg5mSjkiAkx+/iSPfxhPYpCA==
+Sig: vicondoa-firefox-v4l2-nvidia:MPIKBriCTsVpEIbyKjzai7lVk33tsTszzDofhn1g5HK+R0nO/pmKed1YNA58ulywTAZMgEUu92LhyldsZYXrDQ==

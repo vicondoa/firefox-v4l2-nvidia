@@ -1,0 +1,11 @@
+StorePath: /nix/store/0zaswn1ridf8bj89v3w060lh7ps59988-libdaemon-0.14
+URL: nar/1adgvj5dlw9pz46gzp514yk8gz8dyfz4nxana5maq7wbi8awnipm.nar.xz
+Compression: xz
+FileHash: sha256:1adgvj5dlw9pz46gzp514yk8gz8dyfz4nxana5maq7wbi8awnipm
+FileSize: 11152
+NarHash: sha256:09xs07gkc765093y9hhpbbmchdv1l1lkrijlcq3di7fcl3045iyb
+NarSize: 41976
+References: 0zaswn1ridf8bj89v3w060lh7ps59988-libdaemon-0.14 57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61
+Deriver: iilhngcjyrxvjvn3fgy481wc3bcd5aip-libdaemon-0.14.drv
+Sig: cache.nixos.org-1:PBuFHMT9JhquGB+Onaan9YJzmdjC7GpNVHkT0ja2S3Gr8gto+PqR6lAKQWGtpSq2OlKriOIAqIP8O6NA7EQxCg==
+Sig: vicondoa-firefox-v4l2-nvidia:0cLSOThTqsq/KOoD3C6gPdk9AfyYvOX8NGihEVWChakkFO42nmMHbctxuyLc9fBgOuBHIpSUlTkae2AnzTgDCg==

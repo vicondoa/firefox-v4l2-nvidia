@@ -1,0 +1,11 @@
+StorePath: /nix/store/3zqm4hxrxarx85cxd03gj5yvxkzialqj-alsa-lib-1.2.15.3
+URL: nar/1xl0zgc2vpr4mfp875qill8zr83nsp5fv2rhn31pmx3xxzsa6a3p.nar.xz
+Compression: xz
+FileHash: sha256:1xl0zgc2vpr4mfp875qill8zr83nsp5fv2rhn31pmx3xxzsa6a3p
+FileSize: 492376
+NarHash: sha256:0j4jzrb685chbgsfc1qdbm3rm8c8qz0ljnfx5krinacfw4vhm23l
+NarSize: 1872144
+References: 3zqm4hxrxarx85cxd03gj5yvxkzialqj-alsa-lib-1.2.15.3 41b8kcrrjd20gbs1v7bar29arr9wn151-alsa-ucm-conf-1.2.15.3 57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61 m3rljmxkdbvg8sm43mnchsnk1j7l57yw-alsa-topology-conf-1.2.5.1
+Deriver: qrkiq6xy4yz5gxbn3x1cfqc6cp90il1c-alsa-lib-1.2.15.3.drv
+Sig: cache.nixos.org-1:DDM7gTGufR8/CNkbShPcbDpR1RI85e6HyC00x2SBzRUWubjcj4nRN78zkm/n7LPzzQev91f/7EHICI4QNf2PDw==
+Sig: vicondoa-firefox-v4l2-nvidia:aJBGIBH63GGDvZevWUm+HPLkWR3+Zk/D6qyUfbE+AaOKKtvW9GHKsYrQ95dFfJrpyz0wnpRt93IPPrVpDlbRAQ==

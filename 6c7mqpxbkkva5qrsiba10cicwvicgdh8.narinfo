@@ -1,0 +1,11 @@
+StorePath: /nix/store/6c7mqpxbkkva5qrsiba10cicwvicgdh8-libxcomposite-0.4.7
+URL: nar/05dfm8vnxddzqnp0xwijmh39nhkn44g09dmxw4wh3c7mpis0iwz4.nar.xz
+Compression: xz
+FileHash: sha256:05dfm8vnxddzqnp0xwijmh39nhkn44g09dmxw4wh3c7mpis0iwz4
+FileSize: 8036
+NarHash: sha256:02cj845j0cc7v8cvpllv1c4277zyl2fk6f3v5ycls2r8ll8al4zz
+NarSize: 25680
+References: 57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61 6c7mqpxbkkva5qrsiba10cicwvicgdh8-libxcomposite-0.4.7 7gwd2kvkx1s369cwiv5z4x2xjxbppav6-libx11-1.8.13
+Deriver: rl8cqdi0vp6d4zazrjd8imzfgism0k35-libxcomposite-0.4.7.drv
+Sig: cache.nixos.org-1:X+BveWIHj0xsnaM+9wLZMBrepoDJMxKbhYJqsw4ffIRi+f5tg5/K89AplBgxUyGd5NWlfKjQLXaSpLYESefYAg==
+Sig: vicondoa-firefox-v4l2-nvidia:St2AceaSW9YAjq1ZfGmWkSMtRib4p4PsUgJNlUl9if9K7rF3dz2EOuBVbOV/61W8kNNYCpvnir7LnRgC57ATCg==

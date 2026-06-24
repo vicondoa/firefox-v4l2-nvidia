@@ -1,0 +1,9 @@
+StorePath: /nix/store/miig9y3gfv5ykavp6zva2jg1c1sq2qc3-libxrender-0.9.12
+URL: nar/08x9j0m9xyjxzcnnahkfz8cfzxs5hv9q234scpkq5kg3fx0y4jfy.nar.xz
+Compression: xz
+FileHash: sha256:08x9j0m9xyjxzcnnahkfz8cfzxs5hv9q234scpkq5kg3fx0y4jfy
+FileSize: 16740
+NarHash: sha256:0q9wzx9705z6858nhx7rrvhyxn10kc6iwc0lbggrmxk6lj5i47pi
+NarSize: 54504
+References: 57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61 7gwd2kvkx1s369cwiv5z4x2xjxbppav6-libx11-1.8.13 miig9y3gfv5ykavp6zva2jg1c1sq2qc3-libxrender-0.9.12
+Sig: vicondoa-firefox-v4l2-nvidia:qhhbH3oeMIwvWGU3hRdQgX7rjWrvx+AK2C5iBDnKmXSTrJt640yhDH2vAZOMxnq2a/lte3RnZxLsHevmRg0NBQ==

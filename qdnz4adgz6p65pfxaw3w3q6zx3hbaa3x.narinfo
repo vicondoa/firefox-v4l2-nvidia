@@ -1,0 +1,11 @@
+StorePath: /nix/store/qdnz4adgz6p65pfxaw3w3q6zx3hbaa3x-libdeflate-1.25
+URL: nar/13y32n4zgmyrg4yiq7a3abdkxzqgqg3hmx9labaglbv85k73gdh9.nar.xz
+Compression: xz
+FileHash: sha256:13y32n4zgmyrg4yiq7a3abdkxzqgqg3hmx9labaglbv85k73gdh9
+FileSize: 67688
+NarHash: sha256:0ajs2af6zm3x5iirqkg0ff8vgcss3vly4rvj42nj25lmm5v23qp9
+NarSize: 469632
+References: 57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61 qdnz4adgz6p65pfxaw3w3q6zx3hbaa3x-libdeflate-1.25
+Deriver: jx0ksczvhdyrb3srd51bp7gcc32lywkp-libdeflate-1.25.drv
+Sig: cache.nixos.org-1:CMtHGE/Cyk/Kv51Y7shru8XCEEFD8PKQS4IIBdr3x5iYXvHIPSSWqCzZXibb9hBY2LuyMEPGuuAJCPO5yfw2Dg==
+Sig: vicondoa-firefox-v4l2-nvidia:LBFgc5o9CKPeTL9w+GgD9raoi334YIqJhRbix03vXPG+teE/LuNosWBZcVgkGe0QLiwfqRtmPAaLkDG77WuZDQ==

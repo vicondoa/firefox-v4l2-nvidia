@@ -1,0 +1,11 @@
+StorePath: /nix/store/b438mw58nvpkw6hr6p3i8q303psz2dcj-gobject-introspection-1.86.0
+URL: nar/0jk1slkcl91phdzpvpipzqffzsp728l9dd1qahi4ki8m6cs7xg3c.nar.xz
+Compression: xz
+FileHash: sha256:0jk1slkcl91phdzpvpipzqffzsp728l9dd1qahi4ki8m6cs7xg3c
+FileSize: 253412
+NarHash: sha256:0ygf6cmcc1r3g802mbwyw5j10fdf92qsi21bdi3ajr1cqbskci9m
+NarSize: 1244160
+References: 2zs4bbi72plfm8j6zxf1js4f3yc4yzwy-libffi-3.5.2 57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61 b438mw58nvpkw6hr6p3i8q303psz2dcj-gobject-introspection-1.86.0 dydyb18hkw3aqmap8apa3708ws440nxd-cairo-1.18.4 jlyahda14aya375lv7k9fsin2zk90nxz-glib-2.88.1
+Deriver: hvm4k8dak19naxq494hd8fwl2awz6qmq-gobject-introspection-1.86.0.drv
+Sig: cache.nixos.org-1:wcnzwMZBTps3ON76Lr8JfigY6VR4XvTGIhjpBY6NHYj5e8YpXdSpCqAILPOJrbOJHwsy/n/hpyPICKJZc8OlDQ==
+Sig: vicondoa-firefox-v4l2-nvidia:NRC2fvL41TsSjMSREBlwRVEUWib0PCCS7oOOH7quuU2bmi5mUsFSjLQ33Qhv0nR4/jUgv2rarcDDWHieXiC+Cw==

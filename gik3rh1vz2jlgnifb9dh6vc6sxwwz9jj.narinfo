@@ -1,0 +1,9 @@
+StorePath: /nix/store/gik3rh1vz2jlgnifb9dh6vc6sxwwz9jj-bash-5.3p9
+URL: nar/08h23l4rklnqcqfpbv958mg8lcn5c7zr031zi9r50bxhqglp3zrb.nar.xz
+Compression: xz
+FileHash: sha256:08h23l4rklnqcqfpbv958mg8lcn5c7zr031zi9r50bxhqglp3zrb
+FileSize: 502856
+NarHash: sha256:0h6d96kiw6vc87rpk0rxm3p25yr1lwxlcmyn77bp1k7l28gp715z
+NarSize: 1856848
+References: 57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61 gik3rh1vz2jlgnifb9dh6vc6sxwwz9jj-bash-5.3p9
+Sig: vicondoa-firefox-v4l2-nvidia:KjPsmL79BrY+SY6N+mKDMplHma2YtUc1z2F8wFp5G196/oqp3qJ+CTFfM/AVmM7arkoeRDCkWeOp6J/B2gW0BA==

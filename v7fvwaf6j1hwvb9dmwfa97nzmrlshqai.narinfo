@@ -1,0 +1,11 @@
+StorePath: /nix/store/v7fvwaf6j1hwvb9dmwfa97nzmrlshqai-gtk+3-3.24.52
+URL: nar/0da44prydg36gbshsjj54lchp9sfbam1dgla5ip1bphr0rxhwifx.nar.xz
+Compression: xz
+FileHash: sha256:0da44prydg36gbshsjj54lchp9sfbam1dgla5ip1bphr0rxhwifx
+FileSize: 7992348
+NarHash: sha256:029xvw3dkblsshzgsg70nxy05sh1m0ddyxjh83287fygn6a224pq
+NarSize: 43627528
+References: 0kx9jb9qcvh9kg9qi8kxwxymbvbpykdj-libxrandr-1.5.5 2bnyj2q5if7xpbhsmw0ylxj9bwj98daf-pango-1.57.1 48krja1dqwpsa0i3yw9v47hbcxn7agrh-fontconfig-2.17.1-lib 57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61 5d5gq4hcclz3mwikka3ykh924p610bdr-gdk-pixbuf-2.44.6 6c7mqpxbkkva5qrsiba10cicwvicgdh8-libxcomposite-0.4.7 7gwd2kvkx1s369cwiv5z4x2xjxbppav6-libx11-1.8.13 ax8m0gcfw5izxf8nx2qy4nj6vin1qfkj-cups-2.4.19-lib b89rbd2k8k3a8va6xkmh4nizgrpwv0y4-wayland-1.25.0 bd9nkv00cbnj19zc61rlqyrjvnlmq73j-harfbuzz-13.2.1 dydyb18hkw3aqmap8apa3708ws440nxd-cairo-1.18.4 f90x55z2nrpbssg1wlbfd8p54qvi5lvd-libxdamage-1.1.7 f9yj1bxn989y7fdrb4jaxd7kjrm3ajbk-libxfixes-6.0.2 j6fjldry9q1a8i93acwfi7sb0a54s6jc-iso-codes-4.20.1 jlyahda14aya375lv7k9fsin2zk90nxz-glib-2.88.1 l1im0bii1ld332kcgg0gr72k6xla2dq1-libxext-1.3.7 l3j5fql7983mqzjf08h9fw75p2k8vqmj-tinysparql-3.11.1 ljxnc3sy590a8rzf59rvclkxg8h71qdf-libxcursor-1.2.3 m5ippjl54sgjxg4zy1dq2vs2w3yqxy7s-libxi-1.8.2 n590v1dy33pmrqx9f9wdiq3bfmdyva7x-libepoxy-1.5.10 ngfwdjhzzazmqms13lsl5hgi8h7h5h55-libxinerama-1.1.6 s3knizlhir254y56l6kdd85dq8pm8xb1-at-spi2-core-2.60.1 srn27ymz85mv7nbwkv1lyhi7g91cvyh7-fribidi-1.0.16 v7fvwaf6j1hwvb9dmwfa97nzmrlshqai-gtk+3-3.24.52 x0gx9xj0xdg5n9vixwn4p5awi2h613r6-libxkbcommon-1.13.1
+Deriver: dyhzx8fvj1ca4xz71k74j27wl7z2g550-gtk+3-3.24.52.drv
+Sig: cache.nixos.org-1:u6JlT+xrMzIIS46BWmbUnOXQIT8WpmVfamKkll0kdhXub475/uXu/yVpwFaTvIKo8sDLkk/EAS1XegN5LQ8yBA==
+Sig: vicondoa-firefox-v4l2-nvidia:58I5syGspGekhe9rYphzfMHFpwr50wQq+wAwLztr6lwFHk2uD+IuRkhqJ49Ap1v+Noi31yD6rqgRFmHojSOOBg==

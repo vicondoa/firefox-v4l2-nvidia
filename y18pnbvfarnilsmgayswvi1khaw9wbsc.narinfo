@@ -1,0 +1,9 @@
+StorePath: /nix/store/y18pnbvfarnilsmgayswvi1khaw9wbsc-openssl-3.6.2
+URL: nar/08jh37fflw4nafsr189bncv4qk61p4x05hqp3y9yn3bqmg3y2gpm.nar.xz
+Compression: xz
+FileHash: sha256:08jh37fflw4nafsr189bncv4qk61p4x05hqp3y9yn3bqmg3y2gpm
+FileSize: 2520584
+NarHash: sha256:0qlyzr45q4am9x9mng8npal35d224faijy24yq0g701h4wyb7dfj
+NarSize: 9303968
+References: 57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61 y18pnbvfarnilsmgayswvi1khaw9wbsc-openssl-3.6.2
+Sig: vicondoa-firefox-v4l2-nvidia:15OKcHO87raYQYIPSjC+NgZttoO7d4r8V52IYIUcjNv9yfqchK20tYQAEF7m9hFWYV6jFipAsa4TNGsQvNitAg==

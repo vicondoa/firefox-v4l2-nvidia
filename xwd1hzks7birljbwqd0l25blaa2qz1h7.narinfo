@@ -1,0 +1,11 @@
+StorePath: /nix/store/xwd1hzks7birljbwqd0l25blaa2qz1h7-util-linux-minimal-2.42-login
+URL: nar/0jm33kkvfgy9bv42m1vhi5y5idry57v4mgzbkp0yahmxk97q9dv8.nar.xz
+Compression: xz
+FileHash: sha256:0jm33kkvfgy9bv42m1vhi5y5idry57v4mgzbkp0yahmxk97q9dv8
+FileSize: 28360
+NarHash: sha256:1992q7r8zfav833a8rkq92p84x6gvkwjh2gb0ap539vfplhg7hwd
+NarSize: 98248
+References: 57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61 g23gmzxz2asin32kxdnz7cvq5i4fx3an-libxcrypt-4.5.2
+Deriver: lk9162k9z3sd9v3fyg8nhv6xflpf6xcb-util-linux-minimal-2.42.drv
+Sig: cache.nixos.org-1:j4ZAC2kTiFXha76Tcs0j2MhORLght/0hsRozVcRF7ulbb3LfHYB6GaU1tbymqEpHNQPC1y848UawSTpaOxgfBg==
+Sig: vicondoa-firefox-v4l2-nvidia:wcHHL5htug9Uu+zl/oiShAsxNnzI1IGw8+3aCMbsGs5WevT+RoydRneTm9pmG4hBZOLSZAX7HBxnrD5g/nqICw==

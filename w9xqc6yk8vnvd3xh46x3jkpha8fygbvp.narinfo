@@ -1,0 +1,11 @@
+StorePath: /nix/store/w9xqc6yk8vnvd3xh46x3jkpha8fygbvp-gnutls-3.8.13
+URL: nar/1wzqni89xlfn4x5ijd2cqq50hy2a9x66zidnfcdzp2kx3ac2a92m.nar.xz
+Compression: xz
+FileHash: sha256:1wzqni89xlfn4x5ijd2cqq50hy2a9x66zidnfcdzp2kx3ac2a92m
+FileSize: 1076872
+NarHash: sha256:0k227nmg210bs9qbqxlmk0aiqr11jbszjg251vcmk7qd8gq4107k
+NarSize: 3732752
+References: 57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61 6qa00czc79b3nb6ld0mdyacfp2p1k3jx-libidn2-2.3.8 bf6wgamqnl3c91iamlb1branrfcwwy7x-libunistring-1.4.2 bj94qv4isp33qdv9rj61yqd534dzqs80-p11-kit-0.26.2 chqq8mpmpyfi9kgsngya71akv5xicn03-gcc-15.2.0-lib kawx5fdjxa7r9idd689qxvhc6r580zh1-libtasn1-4.21.0 mrvg2vykjhhdlh28bh7h3mqrnmyiajzw-nettle-3.10.2 vg3wx5csgpsix6b76n71nkrlj52q9018-unbound-1.25.0-lib w9xqc6yk8vnvd3xh46x3jkpha8fygbvp-gnutls-3.8.13 y56aqb1m3y5davn6hsv4jfbml78qw4mv-gmp-with-cxx-6.3.0 yyj8jpg9g2382khm5vgb0i20bp8j4phb-dns-root-data-2025-04-14
+Deriver: jjav0qxrlq78mlyy9cs7y4c6yss3ld8h-gnutls-3.8.13.drv
+Sig: cache.nixos.org-1:7aTrL9Y8k5t+xzGn3kv5BzAvCoY4pCGXuy6wHE4nAXoHxP0p6xB/cUTOK2MVGjRTsuL45mmvjHQthIP/BUdYBg==
+Sig: vicondoa-firefox-v4l2-nvidia:GB1n+6gKTgTgOt6rtRrcBFriia2DdqDwScSAiKd+H0Cm8PC/CIAqNBFKaS4LEiNeoREarT5sjgaRD3dKXPxBBQ==

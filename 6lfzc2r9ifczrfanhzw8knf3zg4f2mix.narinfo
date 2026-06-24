@@ -1,0 +1,11 @@
+StorePath: /nix/store/6lfzc2r9ifczrfanhzw8knf3zg4f2mix-libselinux-3.10
+URL: nar/0kb728bkyjl2ap0y18qfrksmn0f66x5gjz1cc9izbzf39vqllwsd.nar.xz
+Compression: xz
+FileHash: sha256:0kb728bkyjl2ap0y18qfrksmn0f66x5gjz1cc9izbzf39vqllwsd
+FileSize: 119692
+NarHash: sha256:0q4kp6k5x0vmclidwl4lwpk0hss0k96m0fqcclxqilkf1rj8fzsl
+NarSize: 706728
+References: 57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61 9qf6m6csaabfx2adfdk5771w8fjsqccs-pcre2-10.46
+Deriver: xy84683d52nzrcq2fmdfwiq93r4m3ipc-libselinux-3.10.drv
+Sig: cache.nixos.org-1:PQjAyLNxgVl2qWPzwk3IsYvMElW23mRxTftSNoR5f4Cr9xaCfl8jz8l2cA/yKsyevZm6xVCzuzpaZ4irJobuCg==
+Sig: vicondoa-firefox-v4l2-nvidia:doii/CA5tL15pvKkWqCGHDjH7vkARacY/AUO7VQaT6v2TeNat4rIziED+DvdXXpYol3BN9J9v4Q2CasMOPySBg==

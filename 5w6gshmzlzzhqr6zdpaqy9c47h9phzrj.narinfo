@@ -1,0 +1,11 @@
+StorePath: /nix/store/5w6gshmzlzzhqr6zdpaqy9c47h9phzrj-libsoup-3.6.6
+URL: nar/0hr1ib0hbcfqhm2vlwdzsbrg0345ym4b1n7qw7ld2ydb5w9dryfw.nar.xz
+Compression: xz
+FileHash: sha256:0hr1ib0hbcfqhm2vlwdzsbrg0345ym4b1n7qw7ld2ydb5w9dryfw
+FileSize: 299216
+NarHash: sha256:0l4k7bfv5d8dxv7px5p99jw74n5zn5y26q9i777y0pnaaakkh6sk
+NarSize: 1214096
+References: 57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61 5w6gshmzlzzhqr6zdpaqy9c47h9phzrj-libsoup-3.6.6 f0gsxi5sc6hvrwmjk4r7dpb71d4vjgn0-libpsl-0.21.5 jlyahda14aya375lv7k9fsin2zk90nxz-glib-2.88.1 k1shjmzyzw8bf7vp8gyrqn4dn70xpdxx-brotli-1.2.0-lib yg1gv8db04ldrnmdhykq8zjqqg6pg5kd-sqlite-3.51.2 zshxcsjv43migvylmfn1dh4wsl5wi09v-nghttp2-1.69.0-lib
+Deriver: k6mnkhh8gn21a31y8qz1j5hijx5vgyip-libsoup-3.6.6.drv
+Sig: cache.nixos.org-1:gMporBbuZwR9T4Jj+ieVdEGfsYreTtK29OZWPAt5ME/YmA1VjFuzYCSmXD1eeiPlPyVknMC66+UGASEe+StpCQ==
+Sig: vicondoa-firefox-v4l2-nvidia:NtPgeRe2NqPIC9J7mRdigzOXZ73Rdc3E2kQuGQfs9abc0DOY+cc15OtdCW0FC61LPxlIuXOCvtkUopCXwsiKAw==

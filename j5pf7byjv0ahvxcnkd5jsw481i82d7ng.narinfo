@@ -1,0 +1,9 @@
+StorePath: /nix/store/j5pf7byjv0ahvxcnkd5jsw481i82d7ng-libjpeg-turbo-3.1.4
+URL: nar/0p4zs6saxidzdp30b3yvgkvxmn13glbxcqjgqb5im3dzdj65fjd5.nar.xz
+Compression: xz
+FileHash: sha256:0p4zs6saxidzdp30b3yvgkvxmn13glbxcqjgqb5im3dzdj65fjd5
+FileSize: 305708
+NarHash: sha256:0kyshkn2xwpj2np8cj8kn221gxnbra1947psawkc9yxskgw8mqcr
+NarSize: 2057832
+References: 57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61
+Sig: vicondoa-firefox-v4l2-nvidia:UKVf53MrbEqIIcXZnC5VM7HU6CXXVj9KIk7qBH6zslTDGPvedurfc9H/HgX9F61Y6k3Ttxh0HLM5AP7hPlYqCg==

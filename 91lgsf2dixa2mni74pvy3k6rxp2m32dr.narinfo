@@ -1,0 +1,11 @@
+StorePath: /nix/store/91lgsf2dixa2mni74pvy3k6rxp2m32dr-librsvg-2.62.1
+URL: nar/0vbvhlc137q5nda4vfsisc8v5zgz07pz8q1k9q13f20idq2zfb9y.nar.xz
+Compression: xz
+FileHash: sha256:0vbvhlc137q5nda4vfsisc8v5zgz07pz8q1k9q13f20idq2zfb9y
+FileSize: 3560932
+NarHash: sha256:06w0096jifkhlz7rmjkzz47ypxw2kwx95h96ixjgp4qxp7xhyvbg
+NarSize: 16091152
+References: 2bnyj2q5if7xpbhsmw0ylxj9bwj98daf-pango-1.57.1 48krja1dqwpsa0i3yw9v47hbcxn7agrh-fontconfig-2.17.1-lib 57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61 5b5819wf841id5xnz5qi6p6hsil05y7s-dav1d-1.5.3 5d5gq4hcclz3mwikka3ykh924p610bdr-gdk-pixbuf-2.44.6 91lgsf2dixa2mni74pvy3k6rxp2m32dr-librsvg-2.62.1 bck1xkk9m0f60352gnjb512ix0n4x9qm-libxml2-2.15.2 bd9nkv00cbnj19zc61rlqyrjvnlmq73j-harfbuzz-13.2.1 chqq8mpmpyfi9kgsngya71akv5xicn03-gcc-15.2.0-lib dydyb18hkw3aqmap8apa3708ws440nxd-cairo-1.18.4 jlyahda14aya375lv7k9fsin2zk90nxz-glib-2.88.1
+Deriver: hgdj1ig8gs5jnnsr0zvm63ncyiy5fsmf-librsvg-2.62.1.drv
+Sig: cache.nixos.org-1:I2aQzL5FbwD2YJP/jcYA1r8llbDzq6sTLW8MnUCAhzSUBSvvnvqmJnogOZPzfWHKCCD1hZZzq4AOJ0hTTnZfBQ==
+Sig: vicondoa-firefox-v4l2-nvidia:qRPCKFUVa4FA7FrFeyjb4fqgefVoAxNg/i2L10F1mDZwpBZje9MQucIqAsHjmdw05avf4Ac92/mI0eQu+uLEBA==

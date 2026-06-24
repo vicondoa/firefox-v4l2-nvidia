@@ -1,0 +1,9 @@
+StorePath: /nix/store/61a1nwx3w6rqyaisj5rn1sal1981apm7-zlib-1.3.2
+URL: nar/1hf7qcshlbmhrpwpp5cxiqdrh7kdqvjdyfy79dybn895s8xghxzs.nar.xz
+Compression: xz
+FileHash: sha256:1hf7qcshlbmhrpwpp5cxiqdrh7kdqvjdyfy79dybn895s8xghxzs
+FileSize: 58952
+NarHash: sha256:0i4wsd7ydyl2hrk7a6sqjgrspsfm8a4kxw2kl1d75lqm220h9c6y
+NarSize: 132608
+References: 57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61
+Sig: vicondoa-firefox-v4l2-nvidia:oiEMM9oYsmzecjyjcqmJDGy+mhkwAtCv30NHfQVqzkgMqmUw4OufA4+jOtAuZ8lTy/7d2/Ao0aDJMa5zNG/zDw==

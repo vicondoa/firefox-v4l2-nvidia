@@ -1,0 +1,11 @@
+StorePath: /nix/store/jjp9vc7vfrflxnliwkwblzadnyyw2zj2-libtiff-4.7.1
+URL: nar/1iigvp4wq27rgn6g2ddc724sg9lg5im15qadjm79cihm32xc2n89.nar.xz
+Compression: xz
+FileHash: sha256:1iigvp4wq27rgn6g2ddc724sg9lg5im15qadjm79cihm32xc2n89
+FileSize: 230252
+NarHash: sha256:1a443i4pb87bpnhiyymnvcvz08bndfgkixsgkh2ap288y79s45rr
+NarSize: 756944
+References: 57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61 61a1nwx3w6rqyaisj5rn1sal1981apm7-zlib-1.3.2 chqq8mpmpyfi9kgsngya71akv5xicn03-gcc-15.2.0-lib gd74vdpqzq0qmmikvmrf3r3kghhhnf50-zstd-1.5.7 j5pf7byjv0ahvxcnkd5jsw481i82d7ng-libjpeg-turbo-3.1.4 jjp9vc7vfrflxnliwkwblzadnyyw2zj2-libtiff-4.7.1 k5vzpmslg2aqrqa93cxigbmii560fliq-libwebp-1.6.0 n2qf6xg33jak5cfykmw1lx3z823hnkas-lerc-4.1.0 qdnz4adgz6p65pfxaw3w3q6zx3hbaa3x-libdeflate-1.25 waz72vmxc8zk90qqvgg9ikhzdk1kzjy4-xz-5.8.3
+Deriver: a43cgikdwkz4d077qsqlp5r8mfzpc8vg-libtiff-4.7.1.drv
+Sig: cache.nixos.org-1:s00XvC34LZLEv43mdTvdPrjCCR/mKQIvs1S/TvbleUoTaKif48DHZpLqdR5+u6UeSdKHUv9wkl1CWrWKwYIwDw==
+Sig: vicondoa-firefox-v4l2-nvidia:gEZr7+3jy+K83/82jST54jmT5//3oOLn1AKBGJm5Angs+UW8kS/aHsMjKPNbia5FA0NxjSTDBTKpT86qX8BxAA==

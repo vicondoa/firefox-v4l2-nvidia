@@ -1,0 +1,11 @@
+StorePath: /nix/store/w3br983xcky4vdsz4df4splnbqhvnwp6-libssh2-1.11.1
+URL: nar/0d9v5pd7181ipammml5vbb0v1m6yd3z651gyrl2s4m60r0xz7mhv.nar.xz
+Compression: xz
+FileHash: sha256:0d9v5pd7181ipammml5vbb0v1m6yd3z651gyrl2s4m60r0xz7mhv
+FileSize: 116668
+NarHash: sha256:0z2saf0ad76p3zdsa5mji6a1yiw4rp3xk9642mblzcmkf7dgg4ns
+NarSize: 334416
+References: 57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61 61a1nwx3w6rqyaisj5rn1sal1981apm7-zlib-1.3.2 w3br983xcky4vdsz4df4splnbqhvnwp6-libssh2-1.11.1 y18pnbvfarnilsmgayswvi1khaw9wbsc-openssl-3.6.2
+Deriver: cawaxfx0ryy037psq79iwcg0ycp5y7kp-libssh2-1.11.1.drv
+Sig: cache.nixos.org-1:I2dg7wEzGv7ZuFx6fvl22PWPjNDv/ix1VdDvfpu9wqO9W7NKn4PePEjL4+Z8v7c56Ni/ejAolnz4x0trtL2yBA==
+Sig: vicondoa-firefox-v4l2-nvidia:BZY+gDD/rimy7AjIdD9t8YQrsP33vAvflmAm/XOYcU1saKq8HL31fiB1OkuFynWhoQ3Jojdq2h1WwA/O62b9Aw==

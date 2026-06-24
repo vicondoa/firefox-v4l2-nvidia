@@ -1,0 +1,9 @@
+StorePath: /nix/store/f9yj1bxn989y7fdrb4jaxd7kjrm3ajbk-libxfixes-6.0.2
+URL: nar/10pj0q2ynw77cwlj3z1z9s6paisq7br6xc3zbsykv4lx7mgagla5.nar.xz
+Compression: xz
+FileHash: sha256:10pj0q2ynw77cwlj3z1z9s6paisq7br6xc3zbsykv4lx7mgagla5
+FileSize: 9952
+NarHash: sha256:1yyvd63y5k2w8djwnjb20z0fg8z3bbq4zhwlwpi3mm7ml2zs149h
+NarSize: 34736
+References: 57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61 7gwd2kvkx1s369cwiv5z4x2xjxbppav6-libx11-1.8.13 f9yj1bxn989y7fdrb4jaxd7kjrm3ajbk-libxfixes-6.0.2
+Sig: vicondoa-firefox-v4l2-nvidia:X6uLKdDiMfCRVYrFMj8HO7Ppm8G+N8nxPiLMdFAe/2mLeAhAMSn53J1yFwjD6PG1jqZvpy80bRWM+TunutcuDg==

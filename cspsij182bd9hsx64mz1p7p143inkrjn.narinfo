@@ -1,0 +1,9 @@
+StorePath: /nix/store/cspsij182bd9hsx64mz1p7p143inkrjn-gmp-with-cxx-6.3.0
+URL: nar/1iwbbwl6qzv4w6cif149lfj93b3y8p6x2zifcy4l1f5zrlbiz2ia.nar.xz
+Compression: xz
+FileHash: sha256:1iwbbwl6qzv4w6cif149lfj93b3y8p6x2zifcy4l1f5zrlbiz2ia
+FileSize: 279912
+NarHash: sha256:0vdlv31iqx9g9w6ildpq2x0hiannhjivwajh8ymlky3kzljxwzra
+NarSize: 783432
+References: 57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61 chqq8mpmpyfi9kgsngya71akv5xicn03-gcc-15.2.0-lib cspsij182bd9hsx64mz1p7p143inkrjn-gmp-with-cxx-6.3.0
+Sig: vicondoa-firefox-v4l2-nvidia:Zp1gQi8TLTii2PLeHCO1u57uOdTQTd0DWNZKW+y5Ioj9mKGoco6sEommhh8wSkKQsH6xfFJ7knJ3nJ46JBVbAQ==

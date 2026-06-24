@@ -1,0 +1,11 @@
+StorePath: /nix/store/dydyb18hkw3aqmap8apa3708ws440nxd-cairo-1.18.4
+URL: nar/0yi3azvpcfv3bfda3bkrwnba0pcnd438qqfr0azmmxygkasai4l3.nar.xz
+Compression: xz
+FileHash: sha256:0yi3azvpcfv3bfda3bkrwnba0pcnd438qqfr0azmmxygkasai4l3
+FileSize: 712168
+NarHash: sha256:06wzs54vcsv1hn91ay24ha9wh8h6h0jkr9j6d0zfj93hwakbwq02
+NarSize: 2171680
+References: 48krja1dqwpsa0i3yw9v47hbcxn7agrh-fontconfig-2.17.1-lib 57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61 7gwd2kvkx1s369cwiv5z4x2xjxbppav6-libx11-1.8.13 a9n3345hndg2z6iwbi7m59gvkwcd264j-freetype-2.14.2 dydyb18hkw3aqmap8apa3708ws440nxd-cairo-1.18.4 hm1ms40h2srvff9kznnj9rj40cc6qcax-pixman-0.46.4 jj27mc075js673vkgd8fy6xxr34n8n9i-libxcb-1.17.0 jlyahda14aya375lv7k9fsin2zk90nxz-glib-2.88.1 l1im0bii1ld332kcgg0gr72k6xla2dq1-libxext-1.3.7 miig9y3gfv5ykavp6zva2jg1c1sq2qc3-libxrender-0.9.12 qpxpydg0wni6jd7gpfgqgjgnfl3lna4l-lzo-2.10 vqyqaaar0dvcdbmzsap60r96n1va0idd-libpng-apng-1.6.56
+Deriver: ki02p6imbncbi1nlrbra8skq5yz53ybg-cairo-1.18.4.drv
+Sig: cache.nixos.org-1:6Vu6v0nZ0iFl38wc25AGnvPeSvprFqPvQ9NGyDRBQWbN6r3rJm+/lf5oCHZM1VN97oYLwS3vfphWDGhDK7ZdAA==
+Sig: vicondoa-firefox-v4l2-nvidia:cPJTyLyi+CnoL2hK2pn0YtEOYy5kzt62EZ7c8l8PRx3g7iAYUB0Xb73RRB4dIRq5MoJVA1GHLjSjaQxrTSWEAA==

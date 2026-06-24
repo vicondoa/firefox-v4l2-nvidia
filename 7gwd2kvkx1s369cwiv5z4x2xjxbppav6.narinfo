@@ -1,0 +1,9 @@
+StorePath: /nix/store/7gwd2kvkx1s369cwiv5z4x2xjxbppav6-libx11-1.8.13
+URL: nar/1ihd7ymsryb109rk5fwz1iimnfndjr7vqdn8yilrpmlnmj9s3g2x.nar.xz
+Compression: xz
+FileHash: sha256:1ihd7ymsryb109rk5fwz1iimnfndjr7vqdn8yilrpmlnmj9s3g2x
+FileSize: 692488
+NarHash: sha256:1rbh7wawp4i7fam25c0p2gw4995anxlhgqdxxx05dbsfcih67l0n
+NarSize: 2700240
+References: 57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61 7gwd2kvkx1s369cwiv5z4x2xjxbppav6-libx11-1.8.13 jj27mc075js673vkgd8fy6xxr34n8n9i-libxcb-1.17.0
+Sig: vicondoa-firefox-v4l2-nvidia:d8/5tkGGfPU7/mtm3Iwl3bj8hU/CwwCrnuyQsZFPAqzkEVS+i1KNN4YLR9ZOAydIQkklD4MM1qVEz7chYOf1Dw==

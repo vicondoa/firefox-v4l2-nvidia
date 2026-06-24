@@ -1,0 +1,9 @@
+StorePath: /nix/store/hm1ms40h2srvff9kznnj9rj40cc6qcax-pixman-0.46.4
+URL: nar/14d5f8j2l4kq4cnxip0fs37j4jf5hf75snxv2znvnlgbpyycv3gy.nar.xz
+Compression: xz
+FileHash: sha256:14d5f8j2l4kq4cnxip0fs37j4jf5hf75snxv2znvnlgbpyycv3gy
+FileSize: 275876
+NarHash: sha256:1aqacjnk1dbwsink9k0hcbilfynz52gza5zg3mcpc7ybk6mg8hj9
+NarSize: 878912
+References: 57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61 hm1ms40h2srvff9kznnj9rj40cc6qcax-pixman-0.46.4
+Sig: vicondoa-firefox-v4l2-nvidia:Whf9Y8YmjFVNr9Z2ak+aChkOK1IVAeZ+LKlL5oe7VWPNLhZi8LMR80X5PNZPXkcSgo4WSo7NpwpFuXYstdH4Cw==

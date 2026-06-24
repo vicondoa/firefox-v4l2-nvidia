@@ -1,0 +1,11 @@
+StorePath: /nix/store/s3knizlhir254y56l6kdd85dq8pm8xb1-at-spi2-core-2.60.1
+URL: nar/1vyl5wpkvk7k0i8iaij2x6im79f7bf4ihmp71b5q6dk0cp88ymb4.nar.xz
+Compression: xz
+FileHash: sha256:1vyl5wpkvk7k0i8iaij2x6im79f7bf4ihmp71b5q6dk0cp88ymb4
+FileSize: 413752
+NarHash: sha256:0haqk70qzrx46r28whvhl5vdcfcnkqzjkp34rhx5wgdzsrnhlyjs
+NarSize: 2369464
+References: 05pzsrj4dmxlfwf8z70hp5vfgvfvfa54-systemd-minimal-libs-260.1 57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61 5q04vvbkfvs2bs4x7pkkrblslflkgv5i-libxtst-1.2.5 7gwd2kvkx1s369cwiv5z4x2xjxbppav6-libx11-1.8.13 gik3rh1vz2jlgnifb9dh6vc6sxwwz9jj-bash-5.3p9 i8dcswdbyy337aw266f922lbik0jy8g6-dconf-0.49.0-lib jlyahda14aya375lv7k9fsin2zk90nxz-glib-2.88.1 k8a44404day9i86sxkjm0gq5ymlvyh06-gsettings-desktop-schemas-50.1 m5ippjl54sgjxg4zy1dq2vs2w3yqxy7s-libxi-1.8.2 ndadbpc4s7b5j2l9vsm2jw8pzfyn8r0v-dbus-1.16.2-lib s3knizlhir254y56l6kdd85dq8pm8xb1-at-spi2-core-2.60.1
+Deriver: 9wm88rl6k884hrhq1j9sf1l3b699ly8x-at-spi2-core-2.60.1.drv
+Sig: cache.nixos.org-1:eH64gcHao+NiJ+yhC2+j7M3gykejovyFAVLO3tcCL5mb3iDqn7L7OxwYGImyCPZGV3W80b1lWNzUiWDl4ArMCg==
+Sig: vicondoa-firefox-v4l2-nvidia:vPch+P3HiAUPKJsRY0+fHsPJuX5GKelAxYBcN54UV+Gp7kr3YWd5akEDUGwGBb5snJb8Dbww16g1THlHXTD/Bw==

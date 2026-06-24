@@ -1,0 +1,9 @@
+StorePath: /nix/store/f90x55z2nrpbssg1wlbfd8p54qvi5lvd-libxdamage-1.1.7
+URL: nar/0wfhpsllavbw31qjkkv53qyblfg75vm0yb0svv7i7ic7v5ka9diq.nar.xz
+Compression: xz
+FileHash: sha256:0wfhpsllavbw31qjkkv53qyblfg75vm0yb0svv7i7ic7v5ka9diq
+FileSize: 4484
+NarHash: sha256:03382qkfc0i6h94vfb1zd89ilbizkw2n7k3xx5hdk8175z74dcdz
+NarSize: 18368
+References: 57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61 7gwd2kvkx1s369cwiv5z4x2xjxbppav6-libx11-1.8.13 f90x55z2nrpbssg1wlbfd8p54qvi5lvd-libxdamage-1.1.7 f9yj1bxn989y7fdrb4jaxd7kjrm3ajbk-libxfixes-6.0.2
+Sig: vicondoa-firefox-v4l2-nvidia:eWB5u93501mjNSPTSVsUTFDd1fFvPjg31xPE071DJZSZGfDpmm7OsHKzUmO8UfDFdEzjsWWzEWzKMpxoUsOKBw==

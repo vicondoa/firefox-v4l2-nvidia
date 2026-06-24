@@ -1,0 +1,9 @@
+StorePath: /nix/store/5cbjxz04crbjnawysjx5q717gvbsx7k8-krb5-1.22.1-lib
+URL: nar/012yjm41jglx699bj0j4jrbarpd9v3x704ylyyfsbm5ycsjgq1yg.nar.xz
+Compression: xz
+FileHash: sha256:012yjm41jglx699bj0j4jrbarpd9v3x704ylyyfsbm5ycsjgq1yg
+FileSize: 821512
+NarHash: sha256:0ibs1rqwgpgwp33qkxr48sa6ii74n90wazj6y6splc8sh1vb2ffg
+NarSize: 2879776
+References: 57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61 5cbjxz04crbjnawysjx5q717gvbsx7k8-krb5-1.22.1-lib wn2byajlpr3w4pii81n6r0bjfrp5ca31-keyutils-1.6.3-lib y18pnbvfarnilsmgayswvi1khaw9wbsc-openssl-3.6.2
+Sig: vicondoa-firefox-v4l2-nvidia:qDPmOKpU/q0lLZSAc+eRFwAcQ8+o6ZLE+NZxYgIHs9cVDN1GElEZH0NKsHvKz3YYHrcaDYim42WOOn4j5LQlCA==

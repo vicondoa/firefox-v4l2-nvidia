@@ -1,0 +1,11 @@
+StorePath: /nix/store/n2qf6xg33jak5cfykmw1lx3z823hnkas-lerc-4.1.0
+URL: nar/14k0gz1sambmkxg33w8lkz38a9vdj8d50m6kx0zmdlqxgjfcazwp.nar.xz
+Compression: xz
+FileHash: sha256:14k0gz1sambmkxg33w8lkz38a9vdj8d50m6kx0zmdlqxgjfcazwp
+FileSize: 218688
+NarHash: sha256:0b9if8d20ziyq7kq2iqjkp0wjsn6s38jkn446gnmb6xyzna5yycy
+NarSize: 862600
+References: 57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61 chqq8mpmpyfi9kgsngya71akv5xicn03-gcc-15.2.0-lib
+Deriver: r21npsdxfypzx8vl6im7vrg8imgx5ssg-lerc-4.1.0.drv
+Sig: cache.nixos.org-1:ORbBeJO/5MbfC/F1QAFrAfeyMZaiV+Xlj24jAQYtuQ4v2+p295/PyIDHS0WXQZf8W4D0E4fm+X/LNrL6AydMDw==
+Sig: vicondoa-firefox-v4l2-nvidia:tRTbP51U0IFbsYlwTrkOpeU4MDLZ1gP/pXgAFcWSwy9SdD0k8aP0rv2sOHnEhC6Y2JUZVSwaq///WetWbnV5CQ==

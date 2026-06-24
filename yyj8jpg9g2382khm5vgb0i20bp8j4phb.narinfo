@@ -1,0 +1,11 @@
+StorePath: /nix/store/yyj8jpg9g2382khm5vgb0i20bp8j4phb-dns-root-data-2025-04-14
+URL: nar/1h7g0xchhas85jbwq4cm1xcy1m1jyg877zrk8djqxb51qipdyw38.nar.xz
+Compression: xz
+FileHash: sha256:1h7g0xchhas85jbwq4cm1xcy1m1jyg877zrk8djqxb51qipdyw38
+FileSize: 1712
+NarHash: sha256:1svg8wvqhl7sr3jfzf2wr1g9wg27dl49i7k6sn2s0mwqharqlcf1
+NarSize: 4968
+References: 
+Deriver: npzidv2j3p0jlnd795hzrw1j7zzl7f0s-dns-root-data-2025-04-14.drv
+Sig: cache.nixos.org-1:UAAS2TT19jiXV0Cp/BuLqOHhTL48shTeacvmF01uLMfU8g+zsTiagO2sB1HJ6FTdwQ3HrpK8M/WumxqwLvFSDA==
+Sig: vicondoa-firefox-v4l2-nvidia:XUz9mCn4HMsvyYbzc6jb6AU+4I3NeOlMfyi83wpfS6YmkWo4r8WUmeGQvpSjXQxE4p97r1mneHx5GXDyvKNrCg==

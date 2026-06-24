@@ -1,0 +1,11 @@
+StorePath: /nix/store/05pzsrj4dmxlfwf8z70hp5vfgvfvfa54-systemd-minimal-libs-260.1
+URL: nar/1cpcfb1n215vgalk7hf0a464cjqlk81jakyzf9cy944clm7p1cmi.nar.xz
+Compression: xz
+FileHash: sha256:1cpcfb1n215vgalk7hf0a464cjqlk81jakyzf9cy944clm7p1cmi
+FileSize: 980260
+NarHash: sha256:13n3ni6si05acbb8r6g03m4dh5hs02jqx90hwp2s4wj7gdr353jm
+NarSize: 4201832
+References: 05pzsrj4dmxlfwf8z70hp5vfgvfvfa54-systemd-minimal-libs-260.1 57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61 xwd1hzks7birljbwqd0l25blaa2qz1h7-util-linux-minimal-2.42-login
+Deriver: zl6vqb8pw5qcm1sbvrcda094hczihxyr-systemd-minimal-libs-260.1.drv
+Sig: cache.nixos.org-1:0Bs16FItba7QzAm4Q6XJHNx05xTi06VyQN9y+JKrcVvTo6b1GnTPH2lUCFwD59t8Rq7uWMT1WZWFGr9Z9dfPAQ==
+Sig: vicondoa-firefox-v4l2-nvidia:SLM0ejKVdxjtiGpX/T6DY7D1a2/JSlhCCLBKJndvSKvpzOIzthVpiEWlxFgNXKh8hRkgHwJz7l5I15BkbEzlBg==
