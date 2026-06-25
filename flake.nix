@@ -7,6 +7,7 @@
     let
       system = "x86_64-linux";
       pkgs = import nixpkgs { inherit system; };
+      lib = pkgs.lib;
 
       manifest = builtins.fromJSON (builtins.readFile ./nix/prebuilt.json);
       firefoxVersion = "152.0.2";
@@ -40,6 +41,27 @@
       hasPrebuilt = manifest.version != null
         && manifest.binaries ? "firefox-v4l2-nvidia"
         && system == manifest.system;
+      defaultOverrideArgs = {
+        extraPrefsFiles = [];
+        nativeMessagingHosts = [];
+        cfg = {};
+      };
+      resolveOverrideArgs = override:
+        if builtins.isFunction override
+        then override defaultOverrideArgs
+        else override;
+      nativeMessagingHostLinks = hosts:
+        let
+          hostBins = map lib.getBin (lib.unique hosts);
+        in lib.optionalString (hostBins != []) ''
+          mkdir -p $out/lib/mozilla/native-messaging-hosts
+          for host in ${lib.escapeShellArgs (map toString hostBins)}; do
+            for manifest in "$host"/lib/mozilla/native-messaging-hosts/*; do
+              [ -e "$manifest" ] || continue
+              ln -sLt "$out/lib/mozilla/native-messaging-hosts" "$manifest"
+            done
+          done
+        '';
 
       prebuiltPackage = pkgs.stdenv.mkDerivation {
         pname = "firefox-v4l2-nvidia";
@@ -69,6 +91,7 @@
         postFixup = ''
           rm -f $out/bin/firefox $out/bin/.firefox-wrapped $out/bin/.firefox-wrapped_
           makeWrapper $out/lib/firefox/firefox $out/bin/firefox \
+            --set MOZ_SYSTEM_DIR "$out/lib/mozilla" \
             --prefix LD_LIBRARY_PATH : ${pkgs.lib.makeLibraryPath [ pkgs.nss_latest ]}
           install -Dm644 ${policiesJson} $out/lib/firefox/distribution/policies.json
           wrapGApp $out/bin/firefox
@@ -78,19 +101,15 @@
           # extraPrefsFiles, nativeMessagingHosts, and cfg. Accept those
           # and re-derive with the additions applied.
           override = overrideFn: let
-            args = overrideFn {
-              extraPrefsFiles = [];
-              nativeMessagingHosts = [];
-              cfg = {};
-            };
+            args = resolveOverrideArgs overrideFn;
           in prebuiltPackage.overrideAttrs (old: {
-            buildCommand = old.buildCommand or "";
             nativeBuildInputs = (old.nativeBuildInputs or [])
               ++ (args.nativeMessagingHosts or []);
-            postInstall = (old.postInstall or "") + ''
+            installPhase = (old.installPhase or "") + ''
               ${builtins.concatStringsSep "\n" (map (f:
                 "install -Dm644 ${f} $out/lib/firefox/defaults/pref/$(basename ${f})"
               ) (args.extraPrefsFiles or []))}
+              ${nativeMessagingHostLinks (args.nativeMessagingHosts or [])}
             '';
           });
           version = manifest.version;
@@ -127,11 +146,41 @@
           version = firefoxVersion;
         };
       });
+
+      dummyNativeMessagingHost = pkgs.runCommand "dummy-native-messaging-host" {} ''
+        mkdir -p $out/bin $out/lib/mozilla/native-messaging-hosts
+        cat > $out/bin/dummy-native-messaging-host <<'EOF'
+        #!${pkgs.runtimeShell}
+        exit 0
+        EOF
+        chmod +x $out/bin/dummy-native-messaging-host
+        cat > $out/lib/mozilla/native-messaging-hosts/dummy_native_host.json <<EOF
+        {
+          "name": "dummy_native_host",
+          "description": "Dummy native messaging host for wrapper validation",
+          "path": "$out/bin/dummy-native-messaging-host",
+          "type": "stdio",
+          "allowed_extensions": [ "dummy@example.com" ]
+        }
+        EOF
+      '';
+      nativeMessagingHostCheckPackage = prebuiltPackage.override (_: {
+        nativeMessagingHosts = [ dummyNativeMessagingHost ];
+      });
     in {
       packages.${system} = {
         default = if hasPrebuilt then prebuiltPackage else sourcePackage;
         source = sourcePackage;
         unwrapped = firefoxUnwrapped;
       };
+      checks.${system}.native-messaging-hosts = pkgs.runCommand
+        "firefox-native-messaging-hosts-check"
+        {}
+        ''
+          test -e ${nativeMessagingHostCheckPackage}/lib/mozilla/native-messaging-hosts/dummy_native_host.json
+          ${pkgs.binutils}/bin/strings ${nativeMessagingHostCheckPackage}/bin/.firefox-wrapped | grep -q 'MOZ_SYSTEM_DIR'
+          ${pkgs.binutils}/bin/strings ${nativeMessagingHostCheckPackage}/bin/.firefox-wrapped | grep -q '/lib/mozilla'
+          touch $out
+        '';
     };
 }
