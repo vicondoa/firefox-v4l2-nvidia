@@ -6,6 +6,4 @@ FileSize: 4319016
 NarHash: sha256:0yk81mlx3ilclgvn5ym30y5dyk3krirqvisvjbd4wczhw2y2nql2
 NarSize: 21032616
 References: 1scb6xccxlqy8rj9hfgf7ppqv99pfwq9-util-linux-minimal-2.42-lib 57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61 81xib6667nkj5l0hmkis3m211w878l7j-util-linux-minimal-2.42-mount 84vyyygz11han4c3wvip3zb30zh2jdzc-util-linux-minimal-2.42-swap 9ypz3flqsrl5xl495mm8h645gadjsxi1-coreutils-9.11 cfjm0s2jnlaiz9y3byvfa0fc6fp2la20-systemd-minimal-260.1 g23gmzxz2asin32kxdnz7cvq5i4fx3an-libxcrypt-4.5.2 gsi4v2vmizrw84p603lx9mfy1ljcwggh-kmod-31-lib xwd1hzks7birljbwqd0l25blaa2qz1h7-util-linux-minimal-2.42-login zzrv2kz5gv9mch8kwqcbifsz5lmv5rnv-kmod-31
-Deriver: zqim25nyl6433f6qk80mfyjdaj2nivqw-systemd-minimal-260.1.drv
-Sig: cache.nixos.org-1:Kax9IlIwduAdaMF4xMW06FcrnmQyfIGrhKtDhLOW1vJIwLgIYc0YhnncnS7rRPpaQwmFkoG3JbZf6GajIE3hAg==
 Sig: vicondoa-firefox-v4l2-nvidia:frRmxblEots5iCCceAiZXrd7OdNEo3evOuzedxfI1X5VGIMPtyzaJKLpCj41ZXemRkY+nzvRU+XKqO4YwQjSCg==

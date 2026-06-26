@@ -6,6 +6,4 @@ FileSize: 10156
 NarHash: sha256:0pjnlwgic5c8lgi67kc8fh6i5y101v5nkxfp66izymy8dwin8vry
 NarSize: 344168
 References: 
-Deriver: 11lwk29yk42y4yrkvmym81hldi5iizq6-alsa-topology-conf-1.2.5.1.drv
-Sig: cache.nixos.org-1:vqEe/MFk++k0q44zpjRt1JzPhQLBCQPIlWiwrS3KoDqM0OUmgTzGSMBnDSFjH/x+OylYekZNP+3WHaT4LWYUCw==
 Sig: vicondoa-firefox-v4l2-nvidia:d6N3zQlkmpBCwn5d5WEiYM6Ce2IYOqIpcOQ79ozY9h0lH2CT+7pqDw85XdqQdLmrpf/5M5px8snyzIA5go0cCg==

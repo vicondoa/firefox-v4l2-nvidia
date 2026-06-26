@@ -6,6 +6,4 @@ FileSize: 37232
 NarHash: sha256:1jc87m177c3mfs07hbmhbbwk22621h24na92a6lffpc93jypainq
 NarSize: 169768
 References: 1scb6xccxlqy8rj9hfgf7ppqv99pfwq9-util-linux-minimal-2.42-lib 57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61
-Deriver: lk9162k9z3sd9v3fyg8nhv6xflpf6xcb-util-linux-minimal-2.42.drv
-Sig: cache.nixos.org-1:bZvrpxj9/phsdo+jXBVpxMieLhX/qD+2iHOe5tG8FntP9jgiKC9GyZnAQnbYnhmxSTYQHVvzowzqBxHHV2p9BQ==
 Sig: vicondoa-firefox-v4l2-nvidia:f9u+O8BpKxRag9nVlExs2kqA6AM3MjB3YLrmOOUlkHnWbpOw0/ecnhY/i8b+Ysxp3OB6+UnlJDf0L8brTtSQBQ==

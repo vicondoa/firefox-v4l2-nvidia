@@ -6,6 +6,4 @@ FileSize: 448612
 NarHash: sha256:19grz4zi9nis3kf5qynhz9hpj2awp9if2k3267kv16lg41lm4jvz
 NarSize: 1221984
 References: 57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61 5cbjxz04crbjnawysjx5q717gvbsx7k8-krb5-1.22.1-lib 6qa00czc79b3nb6ld0mdyacfp2p1k3jx-libidn2-2.3.8 7kxphmk7sm9k343hs323z8gd6l1c4xsy-ngtcp2-1.22.1 f0gsxi5sc6hvrwmjk4r7dpb71d4vjgn0-libpsl-0.21.5 gd74vdpqzq0qmmikvmrf3r3kghhhnf50-zstd-1.5.7 k1shjmzyzw8bf7vp8gyrqn4dn70xpdxx-brotli-1.2.0-lib k7ph83pqw7wk69zl9jdniwkg681nzavw-nghttp3-1.15.0 w3br983xcky4vdsz4df4splnbqhvnwp6-libssh2-1.11.1 xm1x557414bq1lgrx18gvb7cbz1qrdy8-curl-8.20.0 y18pnbvfarnilsmgayswvi1khaw9wbsc-openssl-3.6.2 zshxcsjv43migvylmfn1dh4wsl5wi09v-nghttp2-1.69.0-lib
-Deriver: qryz1b6wj5j976g96xfr2kybhmgnlf2f-curl-8.20.0.drv
-Sig: cache.nixos.org-1:ACgzndZu0vTe0zESK6/Aqfyan/7Pe1M9O9eOzHhDUaCTFRFGr+Lax/mBnRAGTroAWnoKb95xqFlxF/VFTTCTBA==
 Sig: vicondoa-firefox-v4l2-nvidia:1jJ1Y4zY+OiKWW7E6y6grqD/H+X/208MnMrw/AEMlOY4/z70dIGLR/r9SCJLBct0dUgobl2iKqkSUNEnNcK7Ag==

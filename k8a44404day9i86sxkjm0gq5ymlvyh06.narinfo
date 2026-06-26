@@ -6,6 +6,4 @@ FileSize: 778300
 NarHash: sha256:0fn9js3srd7hpvan94crb414v0jxwwmhian41iy9xajp15dd7c3d
 NarSize: 6483088
 References: k8a44404day9i86sxkjm0gq5ymlvyh06-gsettings-desktop-schemas-50.1
-Deriver: 249afnljmkb96w39xm5jpjrrvwz0rz8i-gsettings-desktop-schemas-50.1.drv
-Sig: cache.nixos.org-1:ZYiPOsJesFjQMy4CVWYAGndQn2bSmgCr8BJ5+8cpP/2+B4/bYR+MAsaR2CKss8jBw8jnkO1T1Hdoit5LFnyDCQ==
 Sig: vicondoa-firefox-v4l2-nvidia:Kt38zxNMDdhcO6i2ktH+QnJ14LO/xOk+y+8wR9fuWjxOkPPJ048ikH1YvCWRztnQy7krYUfGj+E3cCvKWFo3DQ==

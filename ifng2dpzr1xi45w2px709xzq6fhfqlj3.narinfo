@@ -6,6 +6,4 @@ FileSize: 72028
 NarHash: sha256:1biwhznfyfmnmnffq3x2agf0y6w0xr979ilbszzldby8pl983i9b
 NarSize: 417296
 References: 57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61
-Deriver: gvhgfxmvz3n7kkk44pgvkq5g076vfrgd-giflib-5.2.2.drv
-Sig: cache.nixos.org-1:lJbQuWe7leAI9Kk/W43xXeglg1aTyphiRgJP3JTo5UnIUyO5BNSCYE8bq6QRhbSH7dXlkRSsrYM/eRB8KOixBA==
 Sig: vicondoa-firefox-v4l2-nvidia:JSbm8B0VdkOFr64xmq0EurnyGVugtg3nWcPNl5R+zLc3oPiKQYZDxt7RNSvUnbmGTbpeWSbAnuJu1hHeXEjDCg==

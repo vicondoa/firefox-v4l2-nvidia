@@ -6,6 +6,4 @@ FileSize: 86800
 NarHash: sha256:1sqml68ifcmvww2x830dfb2zs6ljzdxbnxy72g03w3mc624sv3cx
 NarSize: 233464
 References: 57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61 5fn8yh764qsrd3hq7zfsy1y1qdifwj79-graphite2-1.3.14 chqq8mpmpyfi9kgsngya71akv5xicn03-gcc-15.2.0-lib
-Deriver: i87ycpmk6xhqcls80fmf00yhd748rikh-graphite2-1.3.14.drv
-Sig: cache.nixos.org-1:F06I7N4o6FCXj1qeEKkepQVeoQTduT01dTXZphkKbJOWi9pIUJc5DoWSglkScj6BTFKxGDwHoMW7edBLldhmDQ==
 Sig: vicondoa-firefox-v4l2-nvidia:YF3FOtlxuP0iyIKS/FQhDkwW4lhF0VMmcz1rWI+G755E80oUxNkqEtM8DTw7W6xpc9d6aDOKrY4Ll45I++tsBA==

@@ -6,6 +6,4 @@ FileSize: 3249756
 NarHash: sha256:1w9m9zzg2jg7iq8b670m2i9rm1v6z07xra2jx15iaqw6qibx9219
 NarSize: 23679136
 References: j6fjldry9q1a8i93acwfi7sb0a54s6jc-iso-codes-4.20.1
-Deriver: s0fr6fc7rk07mwvvsc87dzkgwk64b9s8-iso-codes-4.20.1.drv
-Sig: cache.nixos.org-1:Xb9quMLwUJClo5AwEBZJCb9eA5AgQ7+yzZIhk6I1rg4lHhadM5gvt7tOgKnrrApgBvkuU9EZXXzPi8Gxd11gCQ==
 Sig: vicondoa-firefox-v4l2-nvidia:Jk0rgEZWYYwqWtGpyAk8OHJ41iRnYKrQtrZYDm4ZTAxduPhim+lzr/lH20F40WjAufSMIbRD8alO6PdbK25YCQ==

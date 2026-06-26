@@ -6,6 +6,4 @@ FileSize: 21640
 NarHash: sha256:0lkzyh5yyp4c056ja3lbzdpq58wikwaj8pcy1frwlabyg3dw63bf
 NarSize: 64112
 References: 0kx9jb9qcvh9kg9qi8kxwxymbvbpykdj-libxrandr-1.5.5 57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61 7gwd2kvkx1s369cwiv5z4x2xjxbppav6-libx11-1.8.13 l1im0bii1ld332kcgg0gr72k6xla2dq1-libxext-1.3.7 miig9y3gfv5ykavp6zva2jg1c1sq2qc3-libxrender-0.9.12
-Deriver: xa439ka3vchzsc6skcdygyn1h8fa65w0-libxrandr-1.5.5.drv
-Sig: cache.nixos.org-1:NSHsXX3xCj5ox1PXY7qmmh0b1JDfCWHM2XGvZVcHws7EPNOwwMXV04ihUJH7tGdN+rqDgwU32Oz0jIS60aicBQ==
 Sig: vicondoa-firefox-v4l2-nvidia:N4z2jgURKZcSTuYsgS4msU9QOfo3QNtT+5CxZ0QWstc3Rh70AdHALJ5lSbK9/h3ah6cNstDiEw6tdARwrwOXAw==

@@ -6,6 +6,4 @@ FileSize: 67416
 NarHash: sha256:1bqraw1zkrm2lv3m8ai5864jsgn3gj59ivbymmskn0xidax2xd03
 NarSize: 144384
 References: 57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61 g23gmzxz2asin32kxdnz7cvq5i4fx3an-libxcrypt-4.5.2
-Deriver: jsplhakxa0pffas25325jalphic54571-libxcrypt-4.5.2.drv
-Sig: cache.nixos.org-1:qTq9KSVllVdw/sFUUQR6gM3tDeDdcuW8zX4M+NBybRVNh7d98tRhR5h+99yH8Lu6zTCuzRojIKvocPIfoR4wDQ==
 Sig: vicondoa-firefox-v4l2-nvidia:oC6T+Bk7Rsx3YZ/JrEXfHX2m0MJfVMOakAZsQnda41pTxz2pr42bheSZyCrZNvf0RTf7RSOFn04t1OgVGHAsBQ==

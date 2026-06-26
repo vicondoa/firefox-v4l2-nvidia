@@ -6,6 +6,4 @@ FileSize: 56956
 NarHash: sha256:1ir7b2brmg4883hs26w3f6h7nz2j8plg9r2nfj4ixp2xcrc2wsp1
 NarSize: 154672
 References: 48krja1dqwpsa0i3yw9v47hbcxn7agrh-fontconfig-2.17.1-lib 57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61 7gwd2kvkx1s369cwiv5z4x2xjxbppav6-libx11-1.8.13 a9n3345hndg2z6iwbi7m59gvkwcd264j-freetype-2.14.2 h0gznr936rl16kl51d4xda1hhgcdrjfk-libxft-2.3.9 miig9y3gfv5ykavp6zva2jg1c1sq2qc3-libxrender-0.9.12
-Deriver: ywcls6sy6ik74fprnd18mi4c6ak3bbbx-libxft-2.3.9.drv
-Sig: cache.nixos.org-1:NnQprHPsAeChL+AFtaLxyewmKkrgX7UzAvuxbm/ZSVLH2pNkW8qF4rzkihnJbYfgfIKURf2cpV2JgD0CGWlAAA==
 Sig: vicondoa-firefox-v4l2-nvidia:hg519O125hVhsEof3tX3JE4UTTmvd3XkF1T7XfgfwaIMo4AN/H8p2hcTP6X2kbb2PEfvRy1oYG18z9KCOyNTBg==

@@ -6,6 +6,4 @@ FileSize: 45516
 NarHash: sha256:0j7n3mnv69fg1l8kc8y31mdaaxkkrq7aa44q780fp4qrw7gf3iny
 NarSize: 128600
 References: 57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61 gd74vdpqzq0qmmikvmrf3r3kghhhnf50-zstd-1.5.7 gsi4v2vmizrw84p603lx9mfy1ljcwggh-kmod-31-lib waz72vmxc8zk90qqvgg9ikhzdk1kzjy4-xz-5.8.3
-Deriver: 1qa41c4850ddyc6d4yqzkxgwkrl66ydr-kmod-31.drv
-Sig: cache.nixos.org-1:GchGA8oJcFXO0uRV4RDQj7UFIKQHGHGMtgG67MDcBRkPEoMWCo/JpHR0k8YtBLe+Zilz93gdLhjlvHq9zlBPBQ==
 Sig: vicondoa-firefox-v4l2-nvidia:kQVyStr75sa473ldPsfpcvMBxtGkMYs9uyruU289vky4r/i82jmwZnfI1GDpmdjAQB4mEozsiwfV4zCpm0s5CQ==

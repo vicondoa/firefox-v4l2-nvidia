@@ -6,6 +6,4 @@ FileSize: 12426776
 NarHash: sha256:0xpmkw8pp3kia2x0gwyh4yqdb4bgb06cp6yzkiibwavwsafz7j5r
 NarSize: 56362752
 References: 57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61 8ifj4hdbsh110aaddhpa99lagkzi1y2q-onnxruntime-1.26.0 armsfbcsbzax7pnkim9cqgkx8n747n31-protobuf-34.1 chqq8mpmpyfi9kgsngya71akv5xicn03-gcc-15.2.0-lib
-Deriver: m88cf36iv7wjc348nsxp5q6bgpy8rlz8-onnxruntime-1.26.0.drv
-Sig: cache.nixos.org-1:qcQugtMSgmIEqC4ewXj+BSHLanMGmSc6VuQwLaGKCz7FE71BbqXdjAoZmBfOzqdNDdBcuHDC00GzI6u05ZXGCw==
 Sig: vicondoa-firefox-v4l2-nvidia:8nmUT4AhgMRS2w70eyPKLrqzWnOLojU86bPFnXy2yxvkx2CIWN+sHiHMwoiPQbhHlQWcRhkrhD0/s86QKMkRCw==

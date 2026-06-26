@@ -6,6 +6,4 @@ FileSize: 334700
 NarHash: sha256:0nm0h8wzlljvy8q6psil84lqjfqx2qz2hxk5qada1nqdqr7g2pca
 NarSize: 984976
 References: 57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61 k1shjmzyzw8bf7vp8gyrqn4dn70xpdxx-brotli-1.2.0-lib
-Deriver: al1hk8nxqjm207npmjm88xgpc6h681ps-brotli-1.2.0.drv
-Sig: cache.nixos.org-1:9kInUCpI4b4e6z5pKrdOP8udiI6AD63jVCd75hgUZHI1NNKAGaqY00mU6SbVzM0dAli814iuWgZBDCpCunlfDw==
 Sig: vicondoa-firefox-v4l2-nvidia:uGzQPkMBZHtqSfptj2cEuCF9vWChHYxruY1xnfze7fL7RMjP66OP46jHQ0qIx2j/2MEHSRiP8sSMhFfK0vpIBg==
