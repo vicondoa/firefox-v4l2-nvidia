@@ -31,7 +31,7 @@
           };
           "media.ffmpeg.disable-software-fallback" = {
             Status = "locked";
-            Value = true;
+            Value = false;
           };
         };
       };
@@ -173,14 +173,25 @@
         source = sourcePackage;
         unwrapped = firefoxUnwrapped;
       };
-      checks.${system}.native-messaging-hosts = pkgs.runCommand
-        "firefox-native-messaging-hosts-check"
-        {}
-        ''
-          test -e ${nativeMessagingHostCheckPackage}/lib/mozilla/native-messaging-hosts/dummy_native_host.json
-          ${pkgs.binutils}/bin/strings ${nativeMessagingHostCheckPackage}/bin/.firefox-wrapped | grep -q 'MOZ_SYSTEM_DIR'
-          ${pkgs.binutils}/bin/strings ${nativeMessagingHostCheckPackage}/bin/.firefox-wrapped | grep -q '/lib/mozilla'
-          touch $out
-        '';
+      checks.${system} = {
+        native-messaging-hosts = pkgs.runCommand
+          "firefox-native-messaging-hosts-check"
+          {}
+          ''
+            test -e ${nativeMessagingHostCheckPackage}/lib/mozilla/native-messaging-hosts/dummy_native_host.json
+            ${pkgs.binutils}/bin/strings ${nativeMessagingHostCheckPackage}/bin/.firefox-wrapped | grep -q 'MOZ_SYSTEM_DIR'
+            ${pkgs.binutils}/bin/strings ${nativeMessagingHostCheckPackage}/bin/.firefox-wrapped | grep -q '/lib/mozilla'
+            touch $out
+          '';
+        software-fallback-policy = pkgs.runCommand
+          "firefox-software-fallback-policy-check"
+          {}
+          ''
+            ${pkgs.jq}/bin/jq -e \
+              '.policies.Preferences."media.ffmpeg.disable-software-fallback".Value == false' \
+              ${prebuiltPackage}/lib/firefox/distribution/policies.json
+            touch $out
+          '';
+      };
     };
 }
