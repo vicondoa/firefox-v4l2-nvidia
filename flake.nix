@@ -75,6 +75,7 @@
           pulseaudio ffmpeg libGL pango atk gdk-pixbuf cairo
           fontconfig freetype libxkbcommon wayland
           nspr nss_latest cups libdrm mesa libva protobuf
+          systemdLibs
           xorg.libX11 xorg.libXcomposite xorg.libXdamage xorg.libXext
           xorg.libXfixes xorg.libXrandr xorg.libxcb
         ];
@@ -92,7 +93,10 @@
           rm -f $out/bin/firefox $out/bin/.firefox-wrapped $out/bin/.firefox-wrapped_
           makeWrapper $out/lib/firefox/firefox $out/bin/firefox \
             --set MOZ_SYSTEM_DIR "$out/lib/mozilla" \
-            --prefix LD_LIBRARY_PATH : ${pkgs.lib.makeLibraryPath [ pkgs.nss_latest ]}
+            --prefix LD_LIBRARY_PATH : ${pkgs.lib.makeLibraryPath [
+              pkgs.nss_latest
+              pkgs.systemdLibs
+            ]}
           install -Dm644 ${policiesJson} $out/lib/firefox/distribution/policies.json
           wrapGApp $out/bin/firefox
         '';
@@ -181,6 +185,7 @@
             test -e ${nativeMessagingHostCheckPackage}/lib/mozilla/native-messaging-hosts/dummy_native_host.json
             ${pkgs.binutils}/bin/strings ${nativeMessagingHostCheckPackage}/bin/.firefox-wrapped | grep -q 'MOZ_SYSTEM_DIR'
             ${pkgs.binutils}/bin/strings ${nativeMessagingHostCheckPackage}/bin/.firefox-wrapped | grep -q '/lib/mozilla'
+            ${pkgs.binutils}/bin/strings ${nativeMessagingHostCheckPackage}/bin/.firefox-wrapped | grep -q 'systemd'
             touch $out
           '';
         software-fallback-policy = pkgs.runCommand
