@@ -6,4 +6,6 @@ FileSize: 71448
 NarHash: sha256:1ndpb56khmzjxnn57ych5asgw18y48sjcgaf20gc3l2npn4zdlqb
 NarSize: 233128
 References: 57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61
+Deriver: cwpg5inhh8g9vy7bbb16m48cp5crxk2v-nghttp3-1.15.0.drv
+Sig: cache.nixos.org-1:DA0U4IvXXKjPd5kNoUah6AOvB8f3jXGrDwHYFoGPM5B8ixo1Xa8knzKyW8QsCy37337hdDADw0WqrBKabWghDw==
 Sig: vicondoa-firefox-v4l2-nvidia:fCmwBqXj2uwhMeUiqJ4ItULYq1omSQtqoPqys7rO8vmEciWDwFljCAW9QevQaX12j7OJj4QvYti+/1oYNmcvDw==

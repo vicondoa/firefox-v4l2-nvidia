@@ -6,4 +6,6 @@ FileSize: 37368
 NarHash: sha256:1ghc6rg42zc47krm1irg6qil6gfp9n2k2l23gwy4pp7almb2813w
 NarSize: 98096
 References: 57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61 kawx5fdjxa7r9idd689qxvhc6r580zh1-libtasn1-4.21.0
+Deriver: a7j3aa4jz2w2a4fqwdg0y32jbkhigvnp-libtasn1-4.21.0.drv
+Sig: cache.nixos.org-1:tLiZxzxOfGEKKDtMPjZqWskWXQt+gIdSqsCrw2uSm3Kk/uXk6pcgpD937CAL1DX49k4CjSv09xTOpNB51I38DQ==
 Sig: vicondoa-firefox-v4l2-nvidia:UNlsZx5JptOwjmxlt1RypY57kjkX9k0ZNy2Fb4jbCnv1oOBW+jBgpuH7JPXjY4iAjRq3m64GSP7BTfMteMbvCA==

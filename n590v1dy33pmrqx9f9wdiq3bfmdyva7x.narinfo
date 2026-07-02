@@ -6,4 +6,6 @@ FileSize: 251368
 NarHash: sha256:1akb3w077ipcw17zbw1dgks44x5f57n357h06dv717mbkjybbm6x
 NarSize: 1749264
 References: 57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61 dpi7sgi4dmnddwjwdi57d8x06sx49vkn-libglvnd-1.7.0
+Deriver: rw3pvlq158d5672lmdr032ihyyj7bj7q-libepoxy-1.5.10.drv
+Sig: cache.nixos.org-1:6oFjyMBrf8HOJl26VHptZIvVzNQYrnK7FnH0C2IyhIPrEaPLLYp1e3DavAFlprX23tMfeWruqInXLTHMkgyyCg==
 Sig: vicondoa-firefox-v4l2-nvidia:knb6tqmFM1xG+lc548NErnwwfUWTNUuAvMb0JTVs/i3y2Ryl1Y+hag/ZJkaggRIB3QhRIyqg/d4R/USFwg+/DQ==

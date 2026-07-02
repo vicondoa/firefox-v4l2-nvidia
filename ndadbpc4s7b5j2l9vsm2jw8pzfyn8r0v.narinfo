@@ -6,4 +6,6 @@ FileSize: 150760
 NarHash: sha256:0cjg5sc319i4qmrh6wm2plhq8y4qjw1a6ss58vh4bsx0gciirvy4
 NarSize: 472688
 References: 57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61 7gwd2kvkx1s369cwiv5z4x2xjxbppav6-libx11-1.8.13 cfjm0s2jnlaiz9y3byvfa0fc6fp2la20-systemd-minimal-260.1 ndadbpc4s7b5j2l9vsm2jw8pzfyn8r0v-dbus-1.16.2-lib
+Deriver: wms25q8j1067wnc42m6551nf5yxjv63h-dbus-1.16.2.drv
+Sig: cache.nixos.org-1:btCI2YnWul809/cOxu9Ka7S45sVDsNtgUTeMjw8NOhHn4pWOTKURW300NGbgTC2ELrszcqA00/yOqJMQzMuLBQ==
 Sig: vicondoa-firefox-v4l2-nvidia:feSaImK9Y9reB947eKL5aumQyT4GncopbQZfZQpkWoqNEakJS2osVZZxrneN1Xbi9++FSogYUtCzTm1k7hTACg==

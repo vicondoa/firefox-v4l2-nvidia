@@ -6,4 +6,6 @@ FileSize: 2520584
 NarHash: sha256:0qlyzr45q4am9x9mng8npal35d224faijy24yq0g701h4wyb7dfj
 NarSize: 9303968
 References: 57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61 y18pnbvfarnilsmgayswvi1khaw9wbsc-openssl-3.6.2
+Deriver: h4fkx5vvws4bnpfhhk07k0scjymj189x-openssl-3.6.2.drv
+Sig: cache.nixos.org-1:79QlzRD8qbAXE9hA/83LbVvtD8jQBcaPAtkqndGtRy/GO+8O6ijt2au5Khds2Nn0pQSYiZ+DHTVoTmoVPToCAg==
 Sig: vicondoa-firefox-v4l2-nvidia:15OKcHO87raYQYIPSjC+NgZttoO7d4r8V52IYIUcjNv9yfqchK20tYQAEF7m9hFWYV6jFipAsa4TNGsQvNitAg==

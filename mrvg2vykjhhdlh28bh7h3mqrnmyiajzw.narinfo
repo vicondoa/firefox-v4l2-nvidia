@@ -6,4 +6,6 @@ FileSize: 335216
 NarHash: sha256:1k6h636cjkrw49lk5mhrs507vrhjqgmpdfkfzkv5l6g4zp3m8fv7
 NarSize: 740848
 References: 57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61 mrvg2vykjhhdlh28bh7h3mqrnmyiajzw-nettle-3.10.2 y56aqb1m3y5davn6hsv4jfbml78qw4mv-gmp-with-cxx-6.3.0
+Deriver: jva6lcqs2n3rk36wf6srfqnh2jgjbv2v-nettle-3.10.2.drv
+Sig: cache.nixos.org-1:sZoxSz30fffy1FaIuhsssNPl1WNmG5BUR/oCw/Yi3E0GxGWFlL3F5n25YaM2H0btVMugtQU56T6Ry7JtPfOAAA==
 Sig: vicondoa-firefox-v4l2-nvidia:Uchu/AxPelydVhVLtZ9CiBHHCBZWSIYZnzI+ITqrHf25fMW8a1UvNs4KhwmFSBR0IAlEqIinAPr+yRmtu2y4Bg==

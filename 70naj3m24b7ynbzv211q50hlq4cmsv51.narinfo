@@ -6,4 +6,6 @@ FileSize: 811084
 NarHash: sha256:0asxiydi963l35kmpa6zn3dsrdima7lfwm18djd0c34f6lll0dkk
 NarSize: 10815536
 References: 70naj3m24b7ynbzv211q50hlq4cmsv51-xkeyboard-config-2.47
+Deriver: zk5zpylxhpc3cc8090d1cra5znkic5h2-xkeyboard-config-2.47.drv
+Sig: cache.nixos.org-1:SI0I3bZdH87kjwWfLFDEAhyXY5LKVvr7J5baV4BZUOfYqoN9XRKFDk2G3ABmYKsXOJ04wZa0I9Bxov9IUg1VBA==
 Sig: vicondoa-firefox-v4l2-nvidia:pcxlCYw5z5QpPYvOAYLs0GXIqZ8C+yGfANqXSC9TESO74LmLqVQi/UUkOb5NEXbHc8+obhFeluNJZrb5YAdGDA==

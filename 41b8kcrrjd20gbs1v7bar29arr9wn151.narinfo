@@ -6,4 +6,6 @@ FileSize: 73692
 NarHash: sha256:1823w262fj818gryh6jz6g8q1qxg8mrpxiphkyb708hlp8j3fay0
 NarSize: 861952
 References: 9ypz3flqsrl5xl495mm8h645gadjsxi1-coreutils-9.11 zzrv2kz5gv9mch8kwqcbifsz5lmv5rnv-kmod-31
+Deriver: hvqyzrbsj0s1flz3id8y64d7zhbxszxq-alsa-ucm-conf-1.2.15.3.drv
+Sig: cache.nixos.org-1:sBj5jIHqLV0Z8iN7xUmiWgrv3qJTFLBhykunpXmuFgmrDPMjPnECQr6RlrezMSrTJZpSvd00hSWIrBsqn73WDw==
 Sig: vicondoa-firefox-v4l2-nvidia:dqVr4Df9yJsH51Fx3qEzm3bB7LmUUhznZ/53s4XyiSaUe8t4ylP0+KAKsNzxIvPUImzuVRQIgvwJ88x44+X0Dw==

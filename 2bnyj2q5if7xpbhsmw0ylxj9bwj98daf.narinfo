@@ -6,4 +6,6 @@ FileSize: 271036
 NarHash: sha256:0w337czzbzy92igwyjh8w47dv8ln1bv33az6xvzjavc6k7cc9zki
 NarSize: 939376
 References: 2bnyj2q5if7xpbhsmw0ylxj9bwj98daf-pango-1.57.1 48krja1dqwpsa0i3yw9v47hbcxn7agrh-fontconfig-2.17.1-lib 57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61 6ianzxcqlzcl8if0jmgjl7iznwc7g5kq-libthai-0.1.30 7gwd2kvkx1s369cwiv5z4x2xjxbppav6-libx11-1.8.13 a9n3345hndg2z6iwbi7m59gvkwcd264j-freetype-2.14.2 bd9nkv00cbnj19zc61rlqyrjvnlmq73j-harfbuzz-13.2.1 dydyb18hkw3aqmap8apa3708ws440nxd-cairo-1.18.4 h0gznr936rl16kl51d4xda1hhgcdrjfk-libxft-2.3.9 jlyahda14aya375lv7k9fsin2zk90nxz-glib-2.88.1 miig9y3gfv5ykavp6zva2jg1c1sq2qc3-libxrender-0.9.12 srn27ymz85mv7nbwkv1lyhi7g91cvyh7-fribidi-1.0.16
+Deriver: x9c526a6qmm9vi604h6s59v8pxxh0mi0-pango-1.57.1.drv
+Sig: cache.nixos.org-1:HY1/2D4CNAYLVErD0Gi5Io+h2VlUN++82m/E+cuGloACP4gP9noFMpeahX09ub4Gl9JBM0GHgkL9pg1wT/G7AA==
 Sig: vicondoa-firefox-v4l2-nvidia:KVq9SZalNZ1FSP7dDI3qy64PnYhJibmaqAxrHzvi1PNl/oJiPrwXrdfzLDkHJRBV0SssutQGQJNab1A9BmpUBQ==

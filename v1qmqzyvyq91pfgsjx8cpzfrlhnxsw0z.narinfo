@@ -6,4 +6,6 @@ FileSize: 649028
 NarHash: sha256:0w9lhcdgk80fm4800vyavf2vr7v26w72pir71cis6haq8fva9pz5
 NarSize: 3505576
 References: 57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61 chqq8mpmpyfi9kgsngya71akv5xicn03-gcc-15.2.0-lib rsmk7psm9kph06fdjay1g97syi8g6g7c-gtest-1.17.0 v1qmqzyvyq91pfgsjx8cpzfrlhnxsw0z-abseil-cpp-20260107.1
+Deriver: nm5ylk9b6p04x07ganrhkz0kbnsw66h4-abseil-cpp-20260107.1.drv
+Sig: cache.nixos.org-1:kmj+x6tb1YUwi8SPCf2KiXGfbxbnMwIP+I+m4OU72DMqyx96krEvEeb0k55PAY30CBBoqlBxQl3Q2KXoaWvYAQ==
 Sig: vicondoa-firefox-v4l2-nvidia:ZSW0F/wkMlpNf2SM8paKoc+/N+sNCvFEFiejTVGWlKgXBpqauzDoF09GA/25Gl5n0I0O80ODgmY9YdJ1snGFBg==

@@ -6,4 +6,6 @@ FileSize: 162584
 NarHash: sha256:1ijdv7h21cx9a6fr0y1ymqwkj03c52f9anm7ahb9lq10rk25rnlz
 NarSize: 495896
 References: 57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61 7kxphmk7sm9k343hs323z8gd6l1c4xsy-ngtcp2-1.22.1 y18pnbvfarnilsmgayswvi1khaw9wbsc-openssl-3.6.2
+Deriver: mikr45hnwf86cmx5g3zm129glnakch7a-ngtcp2-1.22.1.drv
+Sig: cache.nixos.org-1:L/7o0G5x/iN16Y/MrG4tKdUa4X9woHyHkV8EVxMAw4kQ/joK4aRZbnXKVsG6mahveKetsVmx/0aWRgAKmpGmAA==
 Sig: vicondoa-firefox-v4l2-nvidia:rY9q6HhYc3uIOKyVasxzSA6Cyyg3VWr8imHfVY9ESwF7VnqcqzFTYNiYY1YILQqHTj8vyGBY/y/tuqfAdrYpCw==

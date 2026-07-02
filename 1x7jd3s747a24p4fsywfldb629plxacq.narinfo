@@ -6,4 +6,6 @@ FileSize: 188884
 NarHash: sha256:0l91yvgqpd9div7hkscx83210q9x0d02pb3aljyvpxmgb581w3kk
 NarSize: 882384
 References: 1x7jd3s747a24p4fsywfldb629plxacq-libevent-2.1.12 57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61
+Deriver: 9asz7npf7g4av8f1vy36gnaz2h8rdsy7-libevent-2.1.12.drv
+Sig: cache.nixos.org-1:1JoJ+Y4w47sE2w6sF+JOlPhXKiNGaDQnU/bictYB5wUJZVO/lhe3KCkuaxuuX0Zz4OlXeO/OkOZixnuUR5IvDg==
 Sig: vicondoa-firefox-v4l2-nvidia:VXwvznnUHJxn4U9Mzq+VUC+HJumugzwnE34NClPx/OHhiQaDAEBz+3dDfAyGq3c/qB7Otj5EMcO6oE9Gg/HlBQ==

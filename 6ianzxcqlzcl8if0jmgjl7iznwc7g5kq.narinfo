@@ -6,4 +6,6 @@ FileSize: 150280
 NarHash: sha256:0mqhdnfkz1qj4xg57h5nz2ck200hb34h5l7fnvfssjl9vp7819pq
 NarSize: 652312
 References: 57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61 6ianzxcqlzcl8if0jmgjl7iznwc7g5kq-libthai-0.1.30 ssxizwayfsgz2c6nrn8yagks0zri9mm0-libdatrie-2019-12-20-lib
+Deriver: vkd8dhxss8lx3jsv583hi4h643whc1sz-libthai-0.1.30.drv
+Sig: cache.nixos.org-1:mQlaFcDcQgy6r6U/Sz2TDWKfNqHME0/xOl2V7tXuBISEF5TQ20pRQ9/1SiLH2SsAEGnwEKtUKoV93dl3S23GCA==
 Sig: vicondoa-firefox-v4l2-nvidia:VDsq0K6mMMT+A9gW7IPL6Nlj33yZXbnLJRSAPDHZSE9iHMKDNPsKP5gVfsR0F37Yq5GMg2htgwc81UHb/4nPCA==

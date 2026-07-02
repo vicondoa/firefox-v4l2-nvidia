@@ -6,4 +6,6 @@ FileSize: 313792
 NarHash: sha256:0n4mc6x74rzrw400q847hv9ry439rashf2a0pv6hh5j9x3j1hcc6
 NarSize: 1654088
 References: 0zaswn1ridf8bj89v3w060lh7ps59988-libdaemon-0.14 1x7jd3s747a24p4fsywfldb629plxacq-libevent-2.1.12 57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61 chqq8mpmpyfi9kgsngya71akv5xicn03-gcc-15.2.0-lib d8927sznk6qnqln6hl9p4d42h8pq49vg-expat-2.8.0 gik3rh1vz2jlgnifb9dh6vc6sxwwz9jj-bash-5.3p9 jlyahda14aya375lv7k9fsin2zk90nxz-glib-2.88.1 ndadbpc4s7b5j2l9vsm2jw8pzfyn8r0v-dbus-1.16.2-lib xaiy7h3sjjbqzvgl89pk922x9zjb4vvk-avahi-0.8
+Deriver: 3q37pp7lipznx2ky1hz87ky19zmp5yhx-avahi-0.8.drv
+Sig: cache.nixos.org-1:P/r2dKuCHAxiHsdBNQUxs2BrDFF8mXYC1//kNFEqHWuSzdys6hmHUhCUVeB/1i1egCBfnq0Pru7VXmlIIxMOCg==
 Sig: vicondoa-firefox-v4l2-nvidia:fWdpxgpIK1VoeWfzVWqPxJGEAlzgYBDb/w1V+DS6MrpzHuf6WWHq7diaA4A/kN1CerkymoL2QHFiPkCRsO9hBg==

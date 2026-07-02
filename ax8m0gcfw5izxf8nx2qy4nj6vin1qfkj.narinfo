@@ -6,4 +6,6 @@ FileSize: 450736
 NarHash: sha256:0bavw9wydf325a9pcr7h557kbkhp3f5r2sxf9fyfdllw5avs0hbp
 NarSize: 4909664
 References: 57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61 61a1nwx3w6rqyaisj5rn1sal1981apm7-zlib-1.3.2 ax8m0gcfw5izxf8nx2qy4nj6vin1qfkj-cups-2.4.19-lib w9xqc6yk8vnvd3xh46x3jkpha8fygbvp-gnutls-3.8.13 xaiy7h3sjjbqzvgl89pk922x9zjb4vvk-avahi-0.8
+Deriver: jgbm71iyizaydas48mwn4k2fcqdf6mps-cups-2.4.19.drv
+Sig: cache.nixos.org-1:8I3w3KdOt3NagPps1McesDZ+BIUca72oYpEdcC6b7z9QmHmcCIqCjJvfWfp4RNISQnMEzbnJW/sT8JRWgfAACg==
 Sig: vicondoa-firefox-v4l2-nvidia:zmA3dZ1sWNCTr2hLTQPQylZ+74n9+rNTXh2okGPWXMq8zz9M5Xsg/E8rxSDN6zwWVQgyDgYZB3v6yQYwsMluDw==

@@ -6,4 +6,6 @@ FileSize: 75868
 NarHash: sha256:0r997jpgvk679xm8jin667j0ah50hfb251gpzs7bad1195dz7s4w
 NarSize: 336128
 References: 
+Deriver: abcxfh2spvzd9smisi40sabzhcy5rlr8-publicsuffix-list-0-unstable-2026-03-26.drv
+Sig: cache.nixos.org-1:jqPehuLtEKxWEB9qoicMvBcLhGK+OzxmDVGz5dvJneOFwJeSSv1izNdHBic49w65/qLLKmh/deWAbf4N1cnBBw==
 Sig: vicondoa-firefox-v4l2-nvidia:3y47SirtXdk7h1wtf3yTaoWxyuE9+lsgyQlk2/M+60beGTu1HgA48go0Bt8KVsiCbNOFtQ5StAHo+auk7M79Ag==

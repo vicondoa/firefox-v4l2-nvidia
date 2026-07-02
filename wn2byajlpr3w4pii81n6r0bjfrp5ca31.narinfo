@@ -6,4 +6,6 @@ FileSize: 8080
 NarHash: sha256:11f4d7ikjxyf0ry5yd9gpps1d7lsscdkwy3ppnygqyzpf4l3xqq5
 NarSize: 42848
 References: 57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61
+Deriver: v3nahcvh5059bxz6fwb04n5zr6vrwrgn-keyutils-1.6.3.drv
+Sig: cache.nixos.org-1:v7BH98WS0tMiZtnvA9C/vAiT6OxQOJTV37Hih/X71g6zyDJh3FvKxf++ZcOpGEvLnn82hZILUmgqSmiGRsM5DQ==
 Sig: vicondoa-firefox-v4l2-nvidia:mWjlEPSlw2JX79ThDQKbn8fTOqGCispUOcCc8jsRe0miN7u/WQUivI9paNUulYEJqq3/00JCai9yiAK8jM4kDw==

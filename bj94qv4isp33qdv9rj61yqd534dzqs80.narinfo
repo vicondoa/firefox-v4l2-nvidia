@@ -6,4 +6,6 @@ FileSize: 693988
 NarHash: sha256:0qhscl77v1sg5xqnyzidhxh4wji24py907c71d9mpy58wws2z3wa
 NarSize: 5987016
 References: 2zs4bbi72plfm8j6zxf1js4f3yc4yzwy-libffi-3.5.2 57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61 bj94qv4isp33qdv9rj61yqd534dzqs80-p11-kit-0.26.2 kawx5fdjxa7r9idd689qxvhc6r580zh1-libtasn1-4.21.0
+Deriver: 4h8clmd88s1hdr7xrm65kpkar3wxiyi7-p11-kit-0.26.2.drv
+Sig: cache.nixos.org-1:bXzCwpr5ybxrDCmRtcaaq2Ftr4Ds2thXQ1iD9PhQ7fDLq0LiopKSVxt01dt2qf4S+t2IsguzBPcsHofcXdM6Dw==
 Sig: vicondoa-firefox-v4l2-nvidia:6bTtwr3w9tXRcmP/J80pAXlid0lKosUt3QDa9IoBnVKuijSfVMsJGY1IyFDQpLnP3eAlDDnu2zOGvR/QKsSpAQ==

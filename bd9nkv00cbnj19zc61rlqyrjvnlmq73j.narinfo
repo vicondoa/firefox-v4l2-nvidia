@@ -6,4 +6,6 @@ FileSize: 1186568
 NarHash: sha256:12ql3yn87xgi0d4vbs339n1200afqhnw0qndr98vf2zqi5bmwysg
 NarSize: 3901656
 References: 57iz36553175g3178pvxjij8z5rcsd4n-glibc-2.42-61 5fn8yh764qsrd3hq7zfsy1y1qdifwj79-graphite2-1.3.14 a9n3345hndg2z6iwbi7m59gvkwcd264j-freetype-2.14.2 bd9nkv00cbnj19zc61rlqyrjvnlmq73j-harfbuzz-13.2.1 jlyahda14aya375lv7k9fsin2zk90nxz-glib-2.88.1
+Deriver: q2b6q7274jfa91z28733v661p363hj29-harfbuzz-13.2.1.drv
+Sig: cache.nixos.org-1:AGYwAKyrkA8Yt8+sP9DaCfGlEPLZQLiq5DDazs8kqOXNFalFwdepC5d/jjX7n756D77OAH1ZB/VxyN90RrNdAQ==
 Sig: vicondoa-firefox-v4l2-nvidia:QTqxJEp5JNGO6FvHDMOFuBysFJxpF2uwoDsmoe39aj53Km03hJRvHdkRuwgmlLLlygWoj5woBSM3Boc52jOoBg==
